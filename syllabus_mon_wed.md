@@ -13,20 +13,21 @@ AFIST = _A Friendly Introduction to Software Testing_ by Bill Laboon
 
 ## WEEK 2 (15 Jan)
 
+* NOTE: You must review the slides/notes for Lecture 3 (Requirements and Defects) before Wednesday!  This lecture will not be given in class.  This also includes reading chapters 5 and 9 of AFIST.  Please email if you have any questions.  
+
 * (Class 1) NO CLASS: Martin Luther King, Jr. Day 
 
-* (Class 2) Requirements and Defects
-  * READING: AFIST, Chapters 5 and 9
+* (Class 2) Test Plans and Breaking Software 
 
 ## WEEK 3 (22 Jan)
 
-* (Class 1) Test Plans and Breaking Software 
+* (Class 1) Exploratory, Path-Based, and Automated Testing 
 
-* (Class 2) Exploratory, Path-Based, and Automated Testing
+* (Class 2) Intro to Ruby
 
 ## WEEK 4 (29 Jan)
 
-* (Class 1) Intro to Ruby
+* (Class 1) Advanced Ruby
   
 * (Class 2) EX1: Ruby
 

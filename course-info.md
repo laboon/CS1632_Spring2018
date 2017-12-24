@@ -41,7 +41,7 @@ This course provides students with a broad understanding of modern software test
   * Midterm 1 - 15%
   * Midterm 2 - 15%
 
-Although you are not required to come to every class, it is recommended that you do.  Exercise days (where there is no lecture, but an in-class exercise) are listed on the syllabus as EX_n_, where _n_ is in the range {1,7}).  Although attendance will not be taken on these days, nor will the exercises be graded, it is _strongly_ recommended that you show up for these as they will allow you to verify that you know the basics of the tools being taught, can have them installed, etc.  If you are having trouble with the deliverable, the instructor will always ask to see the results of the relevant exercise _before_ helping with the deliverable.  In other words, finishing the exercise is proof that you have done the bare minimum in understanding the project before asking for additional help.
+Although you are not required to come to every class, it is recommended that you do.  Exercise days (where there is no lecture, but an in-class exercise) are listed on the syllabus as EX_n_, where _n_ is in the range {1,7}).  Although attendance will not be taken on these days, nor will the exercises be graded, it is _strongly_ recommended that you show up for these as they will allow you to verify that you know the basics of the tools being taught, can have them installed, etc.  If you are having trouble with the deliverable, the instructor will always ask to see the results of the relevant exercise _before_ helping with the deliverable.  In other words, finishing the exercise is necessary proof that you have done the bare minimum in understanding the project before asking for additional help.
 
 The following grading scale will be used.  
 
