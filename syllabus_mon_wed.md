@@ -13,7 +13,7 @@ AFIST = _A Friendly Introduction to Software Testing_ by Bill Laboon
 
 ## WEEK 2 (15 Jan)
 
-* NOTE: You must review the slides/notes for Lecture 3 (Requirements and Defects) before Wednesday!  This lecture will not be given in class.  This also includes reading chapters 5 and 9 of AFIST.  Please email if you have any questions.  
+* NOTE: You must review the slides/notes for Lecture 3 (Requirements and Defects) before Wednesday!  This lecture will not be given in class.  This also includes reading chapters 5 and 9 of AFIST.  Please email if you have any questions.  You may also come to the TUESDAY class (in room 403 of the Information Sciences building) to see this lecture if you prefer.
 
 * (Class 1) NO CLASS: Martin Luther King, Jr. Day 
 
