@@ -3,6 +3,13 @@ good_dogs = ["Domino", "Remy", "Mr. Barkerson", "Schaeffer", "Hector", "Dozer"]
 # We may want to operate on all of the elements inside and convert them to
 # other elements by applying a function held in a block.
 
+# Note the dog parameter surrounded by pipes (|'s).  This is Ruby's way of giving
+# you access to the passed-in argument.
+# Read this as: for all good_dogs, run the following method:
+# def transform dog
+#   dog.upcase
+# end
+
 uppercase_dogs = good_dogs.map { |dog| dog.upcase }
 uppercase_dogs.each { |dog| puts "uppercase dog: #{dog}" }
 
@@ -29,3 +36,7 @@ not_short_named_dogs.each { |dog| puts dog }
 # Check if an array includes a value
 puts good_dogs.include? "Bobby" # prints false
 puts good_dogs.include? "Remy" # prints true
+
+# Go through a list of elements AND keep a counter
+# Note that two arguments are passed in
+good_dogs.each_with_index { |dog, index| puts "dog #{index} is named #{dog}" }
