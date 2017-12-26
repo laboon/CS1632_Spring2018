@@ -3,9 +3,11 @@
 class Die
 
   POSSIBLE_VALUES = (1..6).to_a
+
   def roll
     POSSIBLE_VALUES.sample
   end
+  
 end
 
 COME_OUT_LOSS = [2, 3, 12]
@@ -33,6 +35,15 @@ name = gets.chomp
 d1 = Die::new
 d2 = Die::new
 
-d1_val = d1.roll
-d2_val = d2.roll
+game_over = false
+
+until (game_over) do
+  d1_val = d1.roll
+  d2_val = d2.roll
+  val = d1_val + d2_val
+  puts "Die 1 roll: #{d1_val}"
+  puts "Die 2 roll: #{d2_val}"
+  puts "Total     : #{val}"
+  game_over = true
+end
 

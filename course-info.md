@@ -19,12 +19,17 @@ Software Quality Assurance - Spring 2018
 
 **TA**:
 
-**Class GitHub repo:** https://www.github.com/laboon/CS1632_Fall2017  
-**Required Text:** _A Friendly Introduction to Software Testing_ by Bill Laboon.
-* This is a PDF and is available on Github
+**Class GitHub repo:** https://www.github.com/laboon/CS1632_Fall2017
+
+**Required Texts:**
+* _A Friendly Introduction to Software Testing_ by Bill Laboon.
+  * This is a PDF and is available on Github
   * https://github.com/laboon/software-testing/blob/master/software-testing-laboon-ebook.pdf
-* If you like, you may purchase a physical copy on Amazon at: http://www.amazon.com/Friendly-Introduction-Software-Testing/dp/1523477377/ or CreateSpace at: https://www.createspace.com/6008739 .
+  * If you like, you may purchase a physical copy on Amazon at: http://www.amazon.com/Friendly-Introduction-Software-Testing/dp/1523477377/ or CreateSpace at: https://www.createspace.com/6008739 .
   * However, I want to emphasize that this is NOT NECESSARY.  All material is available online, either in this repository or in the (freely available) PDF version of the book linked above.  However, some people prefer to have a physical copy.
+* Why's (Poignant) Guide to Ruby by _why the lucky stiff.
+  * This is available for free online
+  * https://poignant.guide/book/
 
 This course provides students with a broad understanding of modern software testing and quality assurance. Although it will cover testing theory, the emphasis is on providing practical skills in software testing currently used in industry. To that end, it will cover: manual and automated tests, test-driven development, performance testing, and understanding and developing a testing strategy.
 

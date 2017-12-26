@@ -1,9 +1,11 @@
 # Syllabus - Spring 2018
 CS1632 Software Quality Assurance - TUESDAY / THURSDAY 
 
-_Although the professor will make a best effort to have the class topic on the day listed, occasionally a change must be made (e.g., a lecture going long, or a guest lecturer unable to make it to class that day).  However, these are the topics that will be covered and the expected date that they will be taught._
+_Although the instructor will make a best effort to have the class topic on the day listed, occasionally a change must be made (e.g., a lecture going long, or a guest lecturer unable to make it to class that day).  However, these are the topics that will be covered and the expected date that they will be taught._
 
 AFIST = _A Friendly Introduction to Software Testing_ by Bill Laboon
+
+WPGR = _Why's (Poignant) Guide to Ruby_
 
 ## WEEK 1 (8 Jan)
 * (Class 1) Introduction - What is Software Quality Assurance?
@@ -13,20 +15,27 @@ AFIST = _A Friendly Introduction to Software Testing_ by Bill Laboon
 
 ## WEEK 2 (15 Jan)
 
-* (Class 1) NO CLASS: Martin Luther King, Jr. Day 
+* NOTE: Due to Monday classes being cancelled for the holiday, and the fact that Pitt did not schedule enough lectures in the term for Mon/Wed classes, students from the Monday classes may attend the Tuesday class this week.  It will most likely be crowded that day, so be forewarned!
 
-* (Class 2) Requirements and Defects
+* (Class 1) Requirements and Defects
   * READING: AFIST, Chapters 5 and 9
+
+* (Class 2) Test Plans and Breaking Software 
+  * ASSIGNED: Deliverable 1
 
 ## WEEK 3 (22 Jan)
 
-* (Class 1) Test Plans and Breaking Software 
-
-* (Class 2) Exploratory, Path-Based, and Automated Testing
-
+* (Class 1) Exploratory, Path-Based, and Automated Testing 
+  
+* (Class 2) Intro to Ruby
+  * READING: WPGR, Chapter 1-4
+  
 ## WEEK 4 (29 Jan)
 
-* (Class 1) Intro to Ruby
+* (Class 1) Intro to Ruby, cont'd
+  * READING: WPGR, Chapter 5-6
+  * DUE: Deliverable 1
+  * ASSIGNED: Deliverable 2
   
 * (Class 2) EX1: Ruby
 
@@ -49,9 +58,11 @@ AFIST = _A Friendly Introduction to Software Testing_ by Bill Laboon
 
 * (Class 1) Pairwise and Combinatorial Testing
   * READING: AFIST, Chapter 17
+  * DUE: Deliverable 2
 
 * (Class 2) Performance Testing, Part 1
-
+  * ASSIGNED: Deliverable 3
+  
 ## WEEK 8 (26 Feb)
 
 * (Class 1) Performance Testing, Part 2 
@@ -67,7 +78,9 @@ AFIST = _A Friendly Introduction to Software Testing_ by Bill Laboon
 * (Class 1) Automated System Testing w/ Capybara
 
 * (Class 2) Automated System Testing w/ Capybara, part 2
-
+  * DUE: Deliverable 3
+  * ASSIGNED: Deliverable 4
+  
 ## WEEK 11 (19 Mar)
 
 * (Class 1) EX4: Automated System Testing
@@ -77,6 +90,8 @@ AFIST = _A Friendly Introduction to Software Testing_ by Bill Laboon
 ## WEEK 12 (26 Mar)
 
 * (Class 1) Mutation Testing and Code Smells
+  * DUE: Deliverable 4
+  * ASSIGNED: Deliverable 5
 
 * (Class 2) EX5: Static Analysis and Mutation Testing
 
@@ -84,9 +99,11 @@ AFIST = _A Friendly Introduction to Software Testing_ by Bill Laboon
 
 * (Class 1) Stochastic and Property-Based Testing
   * READING: AFIST, Chapter 18 
-
+  * DUE: Deliverable 5
+  * ASSIGNED: Deliverable 6
+  
 * (Class 2) EX6: Property-based Testing
-
+  
 ## WEEK 14 (9 Apr)
 
 * (Class 1) Interacting With Stakeholders
@@ -98,14 +115,6 @@ AFIST = _A Friendly Introduction to Software Testing_ by Bill Laboon
 ## WEEK 15 (16 Apr)
 
 * (Class 1) EX7: Penetration Testing
-
+  * DUE: Deliverable 6
+  
 * (Class 2) MIDTERM 2
-
-
-
-
-
-
-
-
-
