@@ -41,5 +41,67 @@ puts c % 2 # prints 1
 a += 1
 puts a # prints 2
 
+# Any variable can also be nil, which is similar to Java's null
+# I do not have a dog, so this reference is nil
+my_dog = nil
 
+# Unlike Java's null, though, nil is a true object which has its own methods!
+puts nil.class # prints NilClass
 
+# Convert to Float
+puts my_dog.to_f # prints 0.0
+
+# Booleans are kind of odd.  TrueClass and FalseClass are two separate classes.
+t = true
+puts t.class # prints TrueClass
+f = false
+puts f.class # prints FalseClass
+
+# This is fine, though, because Ruby does not check for boolean values directly
+# It checks if something is _truthy_ or _falsy_
+# true is truthy, and false is falsy, but there are all kinds of other things that
+# Ruby can interpret as truthy or falsy!  Unlike Java, which will yell at you
+# if you try to check the truthiness or falsiness of a value.
+# In Ruby, generally EVERYTHING counts as true EXCEPT false and nil - even things like
+# the empty string and 0, which in other language may be considered falsy.
+
+# Note that we are introducing conditionals here (if statements) which operate
+# very similar to Java.  See conditionals.rb for more details.
+
+if true
+  puts "true is truthy"
+else
+  puts "true is falsy"
+end
+
+if false
+  puts "false is truth"
+else
+  puts "false is falsy"
+end
+
+if nil
+  puts "nil is truthy"
+else
+  puts "nil is falsy"
+end
+
+if 0
+  puts "0 is truthy"
+else
+  puts "0 is falsy"
+end
+
+if 1
+  puts "1 is truthy"
+else
+  puts "1 is falsy"
+end
+
+empty_string = ""
+
+if empty_string
+  puts "empty_string is truthy"
+else
+  puts "empty_string is falsy"
+end
