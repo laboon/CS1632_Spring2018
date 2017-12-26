@@ -83,6 +83,6 @@ super_dog.eat "Superfood"
 super_dog.bark
 
 # If Ruby goes all the way to BasicObject (top of object hierarchy) without
-# finding the method, it will raise a NoMethodError which will end the program
-# Dogs don't meow
-super_dog.meow
+# finding the method, it will raise a NoMethodError which will end the program.
+# Dogs don't meow.
+# super_dog.meow
