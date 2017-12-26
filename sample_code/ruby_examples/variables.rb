@@ -51,6 +51,22 @@ puts nil.class # prints NilClass
 # Convert to Float
 puts my_dog.to_f # prints 0.0
 
+# Arrays are just like any other object and have numerous helper methods
+
+good_birds = ["Jazzy", "Tonic", "Ton-Dog", "Method"]
+num_good_birds = good_birds.count # returns number of elements in array
+puts "Number of good birds = #{num_good_birds}"
+
+# Ranges are a set of values from one number to another
+num_range = 1..10
+puts num_range.count # prints 10
+
+# You can convert a range to an array using .to_a
+# This will be useful since you can do many more things with an array
+# than a range, but we will discuss those later
+
+num_range_arr = num_range.to_a
+
 # Booleans are kind of odd.  TrueClass and FalseClass are two separate classes.
 t = true
 puts t.class # prints TrueClass

@@ -23,3 +23,37 @@ if bird_age
 else
   puts "This bird is ageless"
 end
+
+# Ruby has "else if" like Java, but it is spelled "elsif"
+
+if bird_age >= 5 && bird_age <= 18
+  puts "This bird can go to public school"
+elsif bird_age > 50
+  puts "This bird can join the AARP"
+else
+  puts "This bird is living a boring life"
+end
+  
+
+# Ruby also supports switch statements, but they are called case..when
+
+case bird_age
+when 18
+  puts "This bird just became an adult"
+when 65
+  puts "This bird can retire"
+else
+  puts "Nothing else interesting happening with this bird"
+end
+
+# Ruby also has unless, which acts as the opposite of "if"
+# It will 
+# Generally avoid unless..else - this is difficult to understand
+
+unless bird_age >= 35
+  puts "This bird cannot be elected US President"
+end
+
+# You can do this on one line
+# Ruby often reads like English
+puts "This bird cannot retire" unless bird_age > 64
