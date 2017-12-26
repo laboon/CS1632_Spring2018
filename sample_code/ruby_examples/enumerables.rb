@@ -27,4 +27,5 @@ not_short_named_dogs = good_dogs.reject { |dog| dog.size < 6 }
 not_short_named_dogs.each { |dog| puts dog }
 
 # Check if an array includes a value
-good_dogs.include? "Bobby"
+puts good_dogs.include? "Bobby" # prints false
+puts good_dogs.include? "Remy" # prints true
