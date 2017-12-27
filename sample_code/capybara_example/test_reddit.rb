@@ -1,3 +1,6 @@
+require "minitest/autorun"
+require "capybara"
+
 class CapybaraTestCase < Minitest::Test
   include Capybara::DSL
   include Capybara::Minitest::Assertions
