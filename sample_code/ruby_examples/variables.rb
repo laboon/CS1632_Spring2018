@@ -67,6 +67,22 @@ puts num_range.count # prints 10
 
 num_range_arr = num_range.to_a
 
+# Hashes (aka HashMaps, aka dictionaries, aka associative arrays) are used
+# quite often in Ruby.  Hashes act like arrays, except instead of indexing
+# by number, you can index them by anything, e.g.:
+# Person -> Integer (age)
+# Integer (id number) -> Cat
+# Course -> Instructor
+
+instructors = Hash::new
+instructors[:CS1632] = "Laboon"
+instructors[:CS1530] = "Chang"
+instructors[:CS1501] = "Farnan"
+puts "Who teaches CS1632?"
+puts instructors[:CS1632]
+puts "List of classes and instructors"
+puts instructors
+
 # Booleans are kind of odd.  TrueClass and FalseClass are two separate classes.
 t = true
 puts t.class # prints TrueClass
