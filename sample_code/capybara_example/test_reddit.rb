@@ -1,5 +1,6 @@
 require "minitest/autorun"
 require "capybara"
+require 'capybara/minitest'
 
 class CapybaraTestCase < Minitest::Test
   include Capybara::DSL
@@ -11,4 +12,12 @@ class CapybaraTestCase < Minitest::Test
   end
 end
 
-# Capybara.javascript_driver = :webkit
+class BlogTest < ActionDispatch::IntegrationTest
+  setup do
+    Capybara.current_driver = Capybara.javascript_driver # :selenium by default
+  end
+
+  test 'shows blog posts' do
+    # ... this test is run with Selenium ...
+  end
+end
