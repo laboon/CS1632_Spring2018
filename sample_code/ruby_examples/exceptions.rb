@@ -37,7 +37,10 @@ def raise_but_rescue
   # catch (Exception ex) {
   #   ...
   # }
-  # Since we are not sending the 
+
+  # Note that "rescue" is really just short for
+  # rescue StandardError
+  # or in other words, all general run-time errors
   begin
     # for each command, call eval on it
     # This means "execute the following string"
@@ -84,6 +87,10 @@ end
 # Exception means ANY kind of exception, including a syntax error!
 # If that happens, you generally want to just have your program
 # exit (not always, of course!)
+
+# Unless you have a REALLY good reason, such as writing your
+# own REPL, you should never write:
+# rescue Exception => e
 
 def see_exception
   raise "foo"
@@ -163,6 +170,7 @@ def throw_no_catch_example
 
   # Note typo here - "ed_prematurely"
   # Otherwise this method is the same as throw_catch_example, above
+  # Note typos are a common issue in Ruby code!
   catch (:ed_prematurely) do
     (0..100).each do |x|
       (0..100).each do |y|
@@ -176,7 +184,4 @@ def throw_no_catch_example
     end
   end
 end
-
-
-throw_no_catch_example
 
