@@ -9,7 +9,7 @@ Software Quality Assurance - Spring 2018
 **Professor's Office Hours:**
 
   * SENSQ 6305  
-  * Friday 9:00 AM - 12:00 noon 
+  * Tuesdays 12:00 noon - 3:00 PM
 
 
 **Class Time:**
@@ -19,7 +19,7 @@ Software Quality Assurance - Spring 2018
 
 **TA**:
 
-**Class GitHub repo:** https://www.github.com/laboon/CS1632_Fall2017
+**Class GitHub repo:** https://www.github.com/laboon/CS1632_Spring2018
 
 **Required Texts:**
 * _A Friendly Introduction to Software Testing_ by Bill Laboon.
