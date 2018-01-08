@@ -61,13 +61,13 @@ WPGR = _Why's (Poignant) Guide to Ruby_
   * DUE: Deliverable 2
   * ASSIGNED: Deliverable 3
 
-* (Class 2) Performance Testing, Part 1
+* (Class 2) Performance Testing
   
 ## WEEK 8 (26 Feb)
 
-* (Class 1) Performance Testing, Part 2 
+* (Class 1) EX3: Performance Testing
 
-* (Class 2) EX3: Performance Testing
+* (Class 2) MIDTERM 1
 
 ## WEEK 9 (5 Mar)
 
@@ -75,11 +75,11 @@ WPGR = _Why's (Poignant) Guide to Ruby_
 
 ## WEEK 10 (12 Mar)
 
-* (Class 1) Automated System Testing w/ Capybara
+* (Class 1) Automated System Testing
   * DUE: Deliverable 3
   * ASSIGNED: Deliverable 4
 
-* (Class 2) Automated System Testing w/ Capybara, part 2
+* (Class 2) Automated System Testing, part 2
   
 ## WEEK 11 (19 Mar)
 
