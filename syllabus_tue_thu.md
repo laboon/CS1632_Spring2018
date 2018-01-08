@@ -59,9 +59,9 @@ WPGR = _Why's (Poignant) Guide to Ruby_
 * (Class 1) Pairwise and Combinatorial Testing
   * READING: AFIST, Chapter 17
   * DUE: Deliverable 2
+  * ASSIGNED: Deliverable 3
 
 * (Class 2) Performance Testing, Part 1
-  * ASSIGNED: Deliverable 3
   
 ## WEEK 8 (26 Feb)
 
@@ -76,22 +76,22 @@ WPGR = _Why's (Poignant) Guide to Ruby_
 ## WEEK 10 (12 Mar)
 
 * (Class 1) Automated System Testing w/ Capybara
-
-* (Class 2) Automated System Testing w/ Capybara, part 2
   * DUE: Deliverable 3
   * ASSIGNED: Deliverable 4
+
+* (Class 2) Automated System Testing w/ Capybara, part 2
   
 ## WEEK 11 (19 Mar)
 
 * (Class 1) EX4: Automated System Testing
 
-* (Class 2) Intro to Static Analysis
+* (Class 2) Static Analysis and Mutation Testing
+  * DUE: Deliverable 4
+  * ASSIGNED: Deliverable 5
 
 ## WEEK 12 (26 Mar)
 
-* (Class 1) Mutation Testing and Code Smells
-  * DUE: Deliverable 4
-  * ASSIGNED: Deliverable 5
+* (Class 1) NO CLASS
 
 * (Class 2) EX5: Static Analysis and Mutation Testing
 
@@ -99,10 +99,10 @@ WPGR = _Why's (Poignant) Guide to Ruby_
 
 * (Class 1) Stochastic and Property-Based Testing
   * READING: AFIST, Chapter 18 
-  * DUE: Deliverable 5
-  * ASSIGNED: Deliverable 6
   
 * (Class 2) EX6: Property-based Testing
+  * DUE: Deliverable 5
+  * ASSIGNED: Deliverable 6
   
 ## WEEK 14 (9 Apr)
 
@@ -114,7 +114,8 @@ WPGR = _Why's (Poignant) Guide to Ruby_
 
 ## WEEK 15 (16 Apr)
 
-* (Class 1) EX7: Penetration Testing
+* (Class 1) MIDTERM 2
+
+* (Class 2) EX7: Penetration Testing
   * DUE: Deliverable 6
   
-* (Class 2) MIDTERM 2
