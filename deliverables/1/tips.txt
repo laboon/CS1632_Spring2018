@@ -2,7 +2,7 @@
 
 2. Remember to put down all the necessary steps and preconditions!
 
-3. The "Test Case" label is for a description of the test case in plain English.  For example, "Ensure that user can go North from the starting room."
+3. The "Description" label is for a description of the test case in plain English.  For example, "Ensure that user can go North from the starting room."
 
 4. You do not need to exhaustively test the application!  If you find yourself with more than three or four test cases per requirement, you may be over-testing.  This is admirable in software where human life is at stake, but this is only your grade.
 
