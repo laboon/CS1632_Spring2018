@@ -13,6 +13,7 @@ likes_hoodies = true # TrueClass - Booleans are a little weird in Ruby!
 # Ruby is dynamically typed - types are inferred at runtime
 # Note there is nothing stopping us from doing this
 
+my_age = 38
 # This will print out (PUT String) the class of the my_age object
 puts my_age.class # Will print out Integer
 my_age = "Laboon"
@@ -31,13 +32,16 @@ puts b - 2 # prints 0
 puts a * b # prints 2
 puts c / b # prints 1
 # !!!- to force floating point division, make sure you have a Float
-# can convert to Float with .to_f
+# This is similar to casting as a float in Java, e.g.
+# int a = 1; int b = 2;
+# float f = (float) a / b;
+# In Ruby, can convert to Float with .to_f
 # can convert to Integer with .to_i
 puts c.to_f / b # prints 1.5
 puts c % 2 # prints 1
 
 # There are no ++ or -- operators - use "a += 1"
-# a-- would results in a syntax error
+# a-- would result in a syntax error
 a += 1
 puts a # prints 2
 
@@ -107,7 +111,7 @@ else
 end
 
 if false
-  puts "false is truth"
+  puts "false is truthy"
 else
   puts "false is falsy"
 end
