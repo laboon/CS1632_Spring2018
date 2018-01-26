@@ -14,8 +14,10 @@ likes_hoodies = true # TrueClass - Booleans are a little weird in Ruby!
 # Note there is nothing stopping us from doing this
 
 my_age = 38
+
 # This will print out (PUT String) the class of the my_age object
 puts my_age.class # Will print out Integer
+
 my_age = "Laboon"
 
 # my_age used to store an Integer, but now it stores a String
@@ -31,6 +33,7 @@ puts a + 2 # prints 3
 puts b - 2 # prints 0
 puts a * b # prints 2
 puts c / b # prints 1
+
 # !!!- to force floating point division, make sure you have a Float
 # This is similar to casting as a float in Java, e.g.
 # int a = 1; int b = 2;
@@ -73,7 +76,11 @@ num_range_arr = num_range.to_a
 
 # Hashes (aka HashMaps, aka dictionaries, aka associative arrays) are used
 # quite often in Ruby.  Hashes act like arrays, except instead of indexing
-# by number, you can index them by anything, e.g.:
+# by number,
+# 0 -> "Dog"
+# 1 -> "Cat"
+# 2 -> "Bird"
+# you can index them by anything, e.g.:
 # Person -> Integer (age)
 # Integer (id number) -> Cat
 # Course -> Instructor
@@ -140,4 +147,10 @@ if empty_string
   puts "empty_string is truthy"
 else
   puts "empty_string is falsy"
+end
+
+if (1 + 1)
+  puts "2 is truthy"
+else
+  puts "2 is falsy"
 end

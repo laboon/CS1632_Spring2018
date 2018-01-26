@@ -30,6 +30,7 @@ yay("Bob")
 yay(1)
 yay "Joe"
 
+
 def double_yay(name_1, name_2)
   puts "#{name_1} and #{name_2} are great!"
 end

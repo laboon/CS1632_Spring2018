@@ -34,6 +34,14 @@ until j == 0
   j -= 1
 end
 
+j = 10
+
+puts "while not loop"
+while (not j == 0)
+  puts j
+  j -= 1
+end
+
 # There are for loops, with nicer syntax than Java.
 # Note that 1..10 is a special class of object called a Range.
 # Also note that technically this for loop is actually a foreach, we are
@@ -42,7 +50,6 @@ puts "for loop"
 for j in 1..10 do
   puts j
 end
-
 
 # We can make this exclude the final value (acting like a standard Java
 # loop by using three dots instead of two.
@@ -66,10 +73,13 @@ for dog in good_dogs do
   puts "#{dog} is a good dog!"
 end
 
+
 # That said, for loops tend to be not very Ruby-like.  Instead, we will
 # often _enumerate_ on a list (such as an array) and do things to do it.
 # This can be done by using .each and then a block of how we want to
 # operate on the data
 
 good_dogs.each { |dog| puts "#{dog} is a good dog!" }
+
+good_dogs.each_with_index { |dog, n| puts "#{n}: #{dog} is a good dog!" }
 
