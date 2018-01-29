@@ -83,7 +83,16 @@ end
 # as you might do catch (Exception e) { e.printStackTrace() } in
 # Java.
 
-# Generally you want to only rescue StandardErrors.  Why?
+
+def see_exception
+  raise "foo"
+rescue StandardError => se
+  puts "Found an error of type #{se.class}:"
+  puts se.to_s # to_s converts it to a string
+end
+
+# Generally you want to only rescue StandardErrors (and their
+# subclasses.  Why?
 # Exception means ANY kind of exception, including a syntax error!
 # If that happens, you generally want to just have your program
 # exit (not always, of course!)
@@ -92,12 +101,14 @@ end
 # own REPL, you should never write:
 # rescue Exception => e
 
-def see_exception
-  raise "foo"
-rescue StandardError => se
-  puts "Found an error of type #{se.class}:"
-  puts se.to_s # to_s converts it to a string
+# Let's see why...
+
+def rescue_exception_bad
+  argle bargle gaschnargle
+rescue Exception => e
+  puts "Got exception '#{e}', continuing..."
 end
+
 
 # You can make your own exceptions by subclassing StandardError
 # (which is a subclass of Exception, but Exception covers things
