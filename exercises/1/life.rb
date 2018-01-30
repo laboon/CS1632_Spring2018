@@ -19,9 +19,9 @@ end
 
 def create_arr(prng, size, percent)
   arr = []
-  (0..size).each do |x|
+  (1..size).each do |x|
     arr[x] = []
-    (0..size).each do |y|
+    (1..size).each do |y|
       arr[x][y] = prng.rand(101) < percent
     end
   end
