@@ -1,0 +1,163 @@
+[laboon@ekaterina ~/pitt/pitt_private/CitySim9600]
+(20431) $ ruby city_sim_9006.rb 
+Traceback (most recent call last):
+city_sim_9006.rb:156:in `<main>': Enter a seed and only a seed (RuntimeError)
+
+[laboon@ekaterina ~/pitt/pitt_private/CitySim9600]
+(20432) $ ruby city_sim_9006.rb 1 2 3 4 5
+Traceback (most recent call last):
+city_sim_9006.rb:156:in `<main>': Enter a seed and only a seed (RuntimeError)
+
+[laboon@ekaterina ~/pitt/pitt_private/CitySim9600]
+(20433) $ ruby city_sim_9006.rb 1
+Driver 1 heading from Cathedral to Museum via Bar St.
+Driver 1 heading from Museum to Hillman via Fifth Ave.
+Driver 1 heading from Hillman to Hospital via Foo St.
+Driver 1 heading from Hospital to Hillman via Foo St.
+Driver 1 heading from Hillman to Downtown via Fifth Ave.
+Driver 1 obtained 2 books!
+Driver 1 obtained 1 dinosaur toy!
+Driver 1 attended 2 classes!
+Driver 2 heading from Museum to Cathedral via Bar St.
+Driver 2 heading from Cathedral to Museum via Bar St.
+Driver 2 heading from Museum to Cathedral via Bar St.
+Driver 2 heading from Cathedral to Museum via Bar St.
+Driver 2 heading from Museum to Hillman via Fifth Ave.
+Driver 2 heading from Hillman to Downtown via Fifth Ave.
+Driver 2 obtained 1 book!
+Driver 2 obtained 3 dinosaur toys!
+Driver 2 attended 4 classes!
+Driver 3 heading from Hospital to Cathedral via Fourth Ave.
+Driver 3 heading from Cathedral to Museum via Bar St.
+Driver 3 heading from Museum to Cathedral via Bar St.
+Driver 3 heading from Cathedral to Monroeville via Fourth Ave.
+Driver 3 obtained 0 books!
+Driver 3 obtained 1 dinosaur toy!
+Driver 3 attended 4 classes!
+Driver 4 heading from Hospital to Cathedral via Fourth Ave.
+Driver 4 heading from Cathedral to Museum via Bar St.
+Driver 4 heading from Museum to Cathedral via Bar St.
+Driver 4 heading from Cathedral to Monroeville via Fourth Ave.
+Driver 4 obtained 0 books!
+Driver 4 obtained 1 dinosaur toy!
+Driver 4 attended 4 classes!
+Driver 5 heading from Museum to Hillman via Fifth Ave.
+Driver 5 heading from Hillman to Downtown via Fifth Ave.
+Driver 5 obtained 1 book!
+Driver 5 obtained 1 dinosaur toy!
+Driver 5 attended 1 class!
+
+[laboon@ekaterina ~/pitt/pitt_private/CitySim9600]
+(20434) $ ruby city_sim_9006.rb 200
+Driver 1 heading from Hillman to Hospital via Foo St.
+Driver 1 heading from Hospital to Cathedral via Fourth Ave.
+Driver 1 heading from Cathedral to Museum via Bar St.
+Driver 1 heading from Museum to Hillman via Fifth Ave.
+Driver 1 heading from Hillman to Downtown via Fifth Ave.
+Driver 1 obtained 2 books!
+Driver 1 obtained 1 dinosaur toy!
+Driver 1 attended 2 classes!
+Driver 2 heading from Cathedral to Museum via Bar St.
+Driver 2 heading from Museum to Hillman via Fifth Ave.
+Driver 2 heading from Hillman to Hospital via Foo St.
+Driver 2 heading from Hospital to Hillman via Foo St.
+Driver 2 heading from Hillman to Downtown via Fifth Ave.
+Driver 2 obtained 2 books!
+Driver 2 obtained 1 dinosaur toy!
+Driver 2 attended 2 classes!
+Driver 3 heading from Hospital to Cathedral via Fourth Ave.
+Driver 3 heading from Cathedral to Monroeville via Fourth Ave.
+Driver 3 obtained 0 books!
+Driver 3 obtained 0 dinosaur toys!
+Driver 3 attended 2 classes!
+Driver 4 heading from Hospital to Hillman via Foo St.
+Driver 4 heading from Hillman to Hospital via Foo St.
+Driver 4 heading from Hospital to Hillman via Foo St.
+Driver 4 heading from Hillman to Hospital via Foo St.
+Driver 4 heading from Hospital to Hillman via Foo St.
+Driver 4 heading from Hillman to Hospital via Foo St.
+Driver 4 heading from Hospital to Hillman via Foo St.
+Driver 4 heading from Hillman to Downtown via Fifth Ave.
+Driver 4 obtained 4 books!
+Driver 4 obtained 0 dinosaur toys!
+Driver 4 attended 1 class!
+Driver 5 heading from Hillman to Hospital via Foo St.
+Driver 5 heading from Hospital to Hillman via Foo St.
+Driver 5 heading from Hillman to Downtown via Fifth Ave.
+Driver 5 obtained 2 books!
+Driver 5 obtained 0 dinosaur toys!
+Driver 5 attended 1 class!
+
+[laboon@ekaterina ~/pitt/pitt_private/CitySim9600]
+(20435) $ ruby city_sim_9006.rb 0
+Driver 1 heading from Hospital to Hillman via Foo St.
+Driver 1 heading from Hillman to Hospital via Foo St.
+Driver 1 heading from Hospital to Hillman via Foo St.
+Driver 1 heading from Hillman to Hospital via Foo St.
+Driver 1 heading from Hospital to Hillman via Foo St.
+Driver 1 heading from Hillman to Hospital via Foo St.
+Driver 1 heading from Hospital to Cathedral via Fourth Ave.
+Driver 1 heading from Cathedral to Monroeville via Fourth Ave.
+Driver 1 obtained 3 books!
+Driver 1 obtained 0 dinosaur toys!
+Driver 1 attended 2 classes!
+Driver 2 heading from Museum to Hillman via Fifth Ave.
+Driver 2 heading from Hillman to Downtown via Fifth Ave.
+Driver 2 obtained 1 book!
+Driver 2 obtained 1 dinosaur toy!
+Driver 2 attended 1 class!
+Driver 3 heading from Cathedral to Monroeville via Fourth Ave.
+Driver 3 obtained 0 books!
+Driver 3 obtained 0 dinosaur toys!
+Driver 3 attended 2 classes!
+Driver 4 heading from Hospital to Cathedral via Fourth Ave.
+Driver 4 heading from Cathedral to Monroeville via Fourth Ave.
+Driver 4 obtained 0 books!
+Driver 4 obtained 0 dinosaur toys!
+Driver 4 attended 2 classes!
+Driver 5 heading from Museum to Cathedral via Bar St.
+Driver 5 heading from Cathedral to Museum via Bar St.
+Driver 5 heading from Museum to Cathedral via Bar St.
+Driver 5 heading from Cathedral to Museum via Bar St.
+Driver 5 heading from Museum to Hillman via Fifth Ave.
+Driver 5 heading from Hillman to Downtown via Fifth Ave.
+Driver 5 obtained 1 book!
+Driver 5 obtained 3 dinosaur toys!
+Driver 5 attended 4 classes!
+
+[laboon@ekaterina ~/pitt/pitt_private/CitySim9600]
+(20436) $ ruby city_sim_9006.rb THISISNOTANUMBER
+Driver 1 heading from Hospital to Hillman via Foo St.
+Driver 1 heading from Hillman to Hospital via Foo St.
+Driver 1 heading from Hospital to Hillman via Foo St.
+Driver 1 heading from Hillman to Hospital via Foo St.
+Driver 1 heading from Hospital to Hillman via Foo St.
+Driver 1 heading from Hillman to Hospital via Foo St.
+Driver 1 heading from Hospital to Cathedral via Fourth Ave.
+Driver 1 heading from Cathedral to Monroeville via Fourth Ave.
+Driver 1 obtained 3 books!
+Driver 1 obtained 0 dinosaur toys!
+Driver 1 attended 2 classes!
+Driver 2 heading from Museum to Hillman via Fifth Ave.
+Driver 2 heading from Hillman to Downtown via Fifth Ave.
+Driver 2 obtained 1 book!
+Driver 2 obtained 1 dinosaur toy!
+Driver 2 attended 1 class!
+Driver 3 heading from Cathedral to Monroeville via Fourth Ave.
+Driver 3 obtained 0 books!
+Driver 3 obtained 0 dinosaur toys!
+Driver 3 attended 2 classes!
+Driver 4 heading from Hospital to Cathedral via Fourth Ave.
+Driver 4 heading from Cathedral to Monroeville via Fourth Ave.
+Driver 4 obtained 0 books!
+Driver 4 obtained 0 dinosaur toys!
+Driver 4 attended 2 classes!
+Driver 5 heading from Museum to Cathedral via Bar St.
+Driver 5 heading from Cathedral to Museum via Bar St.
+Driver 5 heading from Museum to Cathedral via Bar St.
+Driver 5 heading from Cathedral to Museum via Bar St.
+Driver 5 heading from Museum to Hillman via Fifth Ave.
+Driver 5 heading from Hillman to Downtown via Fifth Ave.
+Driver 5 obtained 1 book!
+Driver 5 obtained 3 dinosaur toys!
+Driver 5 attended 4 classes!
