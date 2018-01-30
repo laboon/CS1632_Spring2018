@@ -30,7 +30,7 @@ end
 def raise_but_rescue
 
   # array full of commands we want to execute
-  commands = ['puts "meow"', 'puts "bark"', 'lalala']
+  commands = ['puts "meow"', 'puts "bark"', 'lalala', 'puts "tweet"']
   # think of this as the equivalent of
   # try {
   #   ...
@@ -83,7 +83,6 @@ end
 # as you might do catch (Exception e) { e.printStackTrace() } in
 # Java.
 
-
 def see_exception
   raise "foo"
 rescue StandardError => se
@@ -108,7 +107,6 @@ def rescue_exception_bad
 rescue Exception => e
   puts "Got exception '#{e}', continuing..."
 end
-
 
 # You can make your own exceptions by subclassing StandardError
 # (which is a subclass of Exception, but Exception covers things
@@ -144,6 +142,7 @@ rescue BirdError => be
   puts "Got a BirdError, tweet tweet"
 rescue StandardError => se
   puts "Got an error of class #{se.class}"
+  raise CatError::new
 end
 
 # As mentioned in the preface to this file, throw...catch do
@@ -195,4 +194,3 @@ def throw_no_catch_example
     end
   end
 end
-

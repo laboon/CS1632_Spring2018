@@ -3,10 +3,11 @@
 raise "Enter input and output file" unless ARGV.count == 2
 
 # Otherwise, set first file as input and second as output
-input_file = ARGV[0]
-output_file = ARGV[1]
+input_file, output_file = ARGV[0], ARGV[1]
 
-# Create an empty array, lines
+# output_file = ARGV[1]
+
+# create an empty array, lines
 
 lines = []
 
@@ -15,7 +16,7 @@ lines = []
 File.open(input_file, "r").each_line do |line|
   # For each line read from the file, append that line ( << ) to
   # the lines array.
-  # We also chomp, which trims whitespace, including carriage returns
+  # We also chomp, which trims carriage returns
   lines << line.chomp
 end
 
@@ -30,7 +31,7 @@ end
 # For each line, print it to the console after:
 # 1. Converting the entire line to upper-case
 # 2. Reversing the word
-# 3. 'Squeezing' all 'runs' of letters (e.g., doggy -> dogy, bookkeeper -> bokeper)
+# 3. 'Squeezing' all 'runs' of letters (e.g., doggy -> dogy, bookkeeper -> bokeper, mooooooooooooo -> mo)
 
 converted_lines = lines.map { |line| line.upcase.reverse.squeeze }
 

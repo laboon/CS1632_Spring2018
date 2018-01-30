@@ -117,7 +117,6 @@ point = nil
 # while the statement is falsy
 until (game_status != :not_over) do
 
-
   val = print_roll 
   
   if come_out
