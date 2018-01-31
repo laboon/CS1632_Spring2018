@@ -26,15 +26,74 @@ Before turning this assignment in, I HIGHLY recommend you double-check that all 
 
 Add a short ( < 1 page ) description of issues you faced when writing this code and tests.  If any tests you wrote fail, they should be included here, along with why you think that they are failing.
 
-After this, ON A SEPARATE PAGE, include a screen shot of the executed unit tests.    If a test doesn't pass, it should be included in the concerns section above.  Ideally, for a perfect grade, all tests should be green (passing).  However, if you have what you think is a valid test and it is not passing, I would prefer that you include a note (and perhaps comment out the tests) rather than just deleting it.  Knowing that a defect exists and reporting it is much better than having it discovered by the customer (me)!
+After this, ON A SEPARATE PAGE, include a screen shot of the executed unit tests (this usually means a SCREENSHOT of your terminal - do not just copy and paste the results).    If a test doesn't pass, it should be included in the concerns section above.  Ideally, for a perfect grade, all tests should be green (passing).  However, if you have what you think is a valid test and it is not passing, I would prefer that you include a note (and perhaps comment out the tests) rather than just deleting it.  Knowing that a defect exists and reporting it is much better than having it discovered by the customer (me)!
 
 There is no need to print out the code itself.  It should be on GitHub (or GitLab) BY THE BEGINNING OF CLASS.
 
 At least four (4) unit tests should use stubbing of methods.
 
-I expect unit tests for AT LEAST each method, using a variety of assertions and looking at different failure modes and edge cases.  Keep in mind some of the things we learned when doing manual testing; you should be cognizant of equivalence classes, boundary values, etc. and focus on them.
+At least three (3) unit tests should testing an edge case.  These should be marked in the comments above with the term "EDGE CASE" in all-caps on its own line, like so:
 
-The program should use appropriate object-oriented design.  Think of what objects could possibly exist to describe this world, and what methods they should have.  Do not attempt to do this with no classes or methods, etc.  It is possible but will make testing more difficult!
+```ruby
+# This unit test checks what happens if we try to set a value
+# larger than the maximum value.  It should return -1 in that case.
+# EDGE CASE
+```
+
+There should be a minimum of sixteen (16) unit tests.
+
+Note that the above are ABSOLUTE MINIMUM values.  You may have more of any of them.
+
+I expect unit tests for AT LEAST each method, using a variety of assertions and looking at different failure modes, equivalence classes, and edge cases.
+
+Group the unit tests for each method together (see format below).  Before each group of unit tests for a method, do an equivalence class partitioning for that method OR, for a method that does not lend itself to this, indicate why not.  For example, assume you have a method which just prints a line of asterisks to the console:
+
+```ruby
+def print_line
+  80.times { print '*' }
+  puts
+end
+```
+
+You can write down that as the method does the same thing every time, and has no parameters, it does not make sense to partition it.  Generally, this should be a rare case.  The following method, for example, definitely does have multiple equivalence classes and should be partitioned!
+
+```ruby
+def print_line n
+  n.times { print '*' }
+  puts
+end
+```
+
+The following format should be used:
+
+```ruby
+# UNIT TESTS FOR METHOD absolute_value(x)
+# Equivalence classes:
+# x= -INFINITY..-1 -> returns -x
+# x= 0..INFINITY -> returns x
+# x= (not a number) -> returns nil
+
+# If a negative value is given for x, then -x is returned.
+def test_negative_val
+  assert_equals 1, absolute_value(-1)
+end
+
+# If a positive value is given for x, then x is returned.
+def test_positive_val
+  assert_equals 1, absolute_value(1)
+end
+
+# If an invalid value, such as a string, is given for x,
+# then nil is returned.
+# EDGE CASE
+def test_invalid_val
+  assert_nil absolute_value("poodle")
+end
+```
+
+Keep in mind some of the things we learned when doing manual testing; you should be cognizant of equivalence classes, boundary values, etc. and focus on them.
+
+The program should use appropriate object-oriented design.  Think of what objects could possibly exist to describe this world, and what methods they should have.  Do not attempt to do this with no classes or methods, etc.  It is, of course, possible, but will make testing more difficult!
 
 For this project, you should endeavour to get a good sampling of different equivalence classes and success/failure cases.
 
@@ -45,14 +104,14 @@ Before each test, add some comments (two or three sentences, on average) explain
 ## Grading
 I remind you that grammar and good code count as well as functionality.  By good code, I mean: no commented-out code unless there's an EXPLICIT reason, properly indented code, no misspelled words  bad grammar, in comments or summaries, etc.
 
-The program must be run by typing "ruby city_sim_9600.rb" (with an optional seed parameter) at the command line.
+The program must be run by typing "ruby city_sim_9006.rb" (with an optional seed parameter) at the command line.  It will be run using Ruby 2.5.0 and so I recommend you ensure that you have the same version.  You should be fine with Ruby 2.2.0 or above (changes have been relatively minor since then), but I recommend that you use the latest version just to be safe.
 
 The unit tests must be run by typing "ruby *_test.rb" at the command line.
 
 ## Grading Breakdown
 * Summary and Testing Concerns- 10%
 * Screenshot of executed unit tests - 5%
-* Program Functionality - 45%
-* Test Code - 40%
+* Program Functionality - 40%
+* Test Code - 45%
 
 Please feel free to email me or come to office hours to discuss any problems you have. 
