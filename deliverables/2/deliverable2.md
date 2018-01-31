@@ -28,7 +28,7 @@ Add a short ( < 1 page ) description of issues you faced when writing this code 
 
 After this, ON A SEPARATE PAGE, include a screen shot of the executed unit tests (this usually means a SCREENSHOT of your terminal - do not just copy and paste the results).    If a test doesn't pass, it should be included in the concerns section above.  Ideally, for a perfect grade, all tests should be green (passing).  However, if you have what you think is a valid test and it is not passing, I would prefer that you include a defect report (in the proper template!) rather than just deleting it.  Knowing that a defect exists and reporting it is much better than having it discovered by the customer (me)!
 
-There is no need to print out the code itself.  It should be on GitHub (or GitLab) BY THE BEGINNING OF CLASS.
+There is no need to print out the code itself.  It should be on GitHub BY THE BEGINNING OF CLASS.
 
 At least four (4) unit tests should use stubbing of methods.
 
@@ -61,6 +61,22 @@ You can write down that as the method does the same thing every time, and has no
 def print_line n
   n.times { print '*' }
   puts
+end
+```
+If you have a method which seems like it would have an extreme number of equivalence classes (>6), perhaps due to a large number of parameters, you may instead just write down a list of possible success and failure cases.  For example,
+
+```ruby
+# Returns concatenated version of all vars.
+# SUCCESS CASES: All variables are valid and contain something that can be stringified
+# FAILURE CASES: If any variable is nil, that area is blank
+#                If g or h is not a number, will return ---
+#                If any other variable cannot have .to_s called on it, will return ---
+
+# REFERENCED METHOD
+def concat_stuff a, b, c, d, e, f, g, h
+  "#{a}: #{b} and #{c} / #{d} / #{e} (#{f}:#{g + h}"
+rescue
+  "---"  
 end
 ```
 
