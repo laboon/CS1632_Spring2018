@@ -53,7 +53,7 @@ Remember that we are on a Euclidean 2-torus, so neighbors may exist "wrapped aro
 1n..nn
 2.....
 3.....
-4...nn
+4n..nn
 ```
 
 The game shall continue for the number of iterations expressed at the command line.  This is true _even if_ the game is static (i.e. all cells are dead, or are stuck in a static pattern and never changing).
