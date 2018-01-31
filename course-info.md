@@ -19,8 +19,8 @@ Software Quality Assurance - Spring 2018
 
 **TA**:
 
-* Krithika Ganesh (Mon/Wed 11:00 and 1:00)
-* Akhil Yendluri (Tue/Thu 10:30)
+* Krithika Ganesh (Mon/Wed 11:00 and 1:00) GitHub username: `KrithikaGanesh`
+* Akhil Yendluri (Tue/Thu 10:30) GitHub username: `aky13`
 
 **Class GitHub repo:** https://www.github.com/laboon/CS1632_Spring2018
 

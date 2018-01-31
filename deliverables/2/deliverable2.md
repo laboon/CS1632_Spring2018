@@ -20,7 +20,7 @@ You should turn in a title page with:
 * Your GitHub username
 * The URL of your code and tests on GitHub or GitLab
 
-ENSURE THAT THE THE TA AND I ARE ADDED AS A COLLABORATOR ON GITHUB!  My username is `laboon`.  The TA's username will be emailed to you shortly - for Mon/Wed classes it is `KrithikaGanesh`, for Tue/Thu it is ``.  You will lose an automatic 10 points if either I or the TA cannot access your repository.  
+ENSURE THAT THE THE TA AND I ARE ADDED AS A COLLABORATOR ON GITHUB!  My username is `laboon`.  The TA's username will be emailed to you shortly - for Mon/Wed classes it is `KrithikaGanesh`, for Tue/Thu it is `aky13`.  You will lose an automatic 10 points if either I or the TA cannot access your repository.  
 
 Before turning this assignment in, I HIGHLY recommend you double-check that all of the code that you think is committed is in fact committed by (1) looking at the code on the GitHub web interface and (2) cloning it down to a new directory on your machine and trying to run it from there.
 
