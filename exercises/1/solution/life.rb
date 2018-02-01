@@ -71,8 +71,8 @@ prng = Random::new
 arr = create_arr prng, size, percent
 print_arr arr
 
-iters.times do |x|
-  arr = iterate arr
+(0..iters).each do
   print_arr arr
+  arr = iterate arr
 end
   
