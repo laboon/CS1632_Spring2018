@@ -1,9 +1,7 @@
-# magic_ball.rb
-
-# Just like "public class MagicBall { ... } in Java
+# Just like "public class Predictor { ... } in Java
 # Note we use CamelCase for classes
 
-class MagicBall
+class Predictor
 
   # Instance-level variable.  ALL_CAPITALS_SNAKE_CASE implies that
   # it is a constant. 
@@ -11,7 +9,17 @@ class MagicBall
   # we do not have to declare it as an array, we can just put an array
   # there.
   
-  ANSWERS = ["Yes", "No", "Ask again later", "Maybe", "Future is hazy"]
+  ANSWERS = ["Yes",
+             "No",
+             "Ask again later",
+             "Maybe",
+             "Future is hazy",
+             "It is certain",
+             "It is doubtful",
+             "My sources say no",
+             "Outlook is good",
+             "Outlook is not so good"
+            ]
 
   # Methods are defined by "def" and then a list of parameters, if any.
   # Parentheses are optional.
@@ -32,6 +40,12 @@ class MagicBall
   # A method with no parameters.  It will always return "SHAKE SHAKE SHAKE"
   def shake
     "SHAKE SHAKE SHAKE"
+  end
+
+  # A method which will print SHAKE SHAKE SHAKE to the console
+
+  def print_shake
+    puts "SHAKE SHAKE SHAKE"
   end
   
   # All methods after this declaration are private

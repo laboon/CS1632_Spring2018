@@ -1,5 +1,4 @@
-# main.rb
-# Inspired by https://semaphoreci.com/community/tutorials/getting-started-with-minitest
+# Inspired by https://github.com/fteem/minitest-intro
 
 # Note that you should try to write Ruby in such a way that comments
 # are unnecessary.  I am adding lots here but once you get the hang
@@ -9,7 +8,7 @@
 # This is the equivalent of the "importing" in Java
 # require_relative means "relative to the directory OF THIS FILE"
 # require means "relative to the working directory"
-require_relative 'magic_ball'
+require_relative 'predictor'
 
 # raise is similar to "throw" in Java
 # unless is the "opposite" of "if" in Java
@@ -37,15 +36,15 @@ question = ARGV.join(" ")
 
 puts "Your question is: '#{question}'"
 
-# Here we make a MagicBall object.  This is similar to:
-# MagicBall m = new MagicBall();
+# Here we make a Predictor object.  This is similar to:
+# Predictor p = new Predictor();
 # in Java.
-m = MagicBall::new
+p = Predictor::new
 
-# Call the shake and ask methods on the MagicBall object m.
+# Call the shake and ask methods on the Predictor object p.
 # Look, Ma, no parentheses!  They are not necessary if you only have
 # one argument and it cannot be parsed any other way.  Generally avoid
 # parentheses unless necessary.
 
-puts m.shake
-puts m.ask question
+puts p.shake
+puts p.ask question
