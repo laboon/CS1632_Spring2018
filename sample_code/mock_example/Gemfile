@@ -11,7 +11,5 @@ source "https://rubygems.org"
 
 # List of all gems to be included in this project
 gem "minitest"
-gem 'mocha'
 
 require "minitest/unit"
-require "mocha/mini_test"

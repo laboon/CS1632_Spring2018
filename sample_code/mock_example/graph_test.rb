@@ -1,9 +1,6 @@
 require 'minitest/autorun'
-require 'mocha/test_unit'
 
 require_relative 'graph'
-
-require 'mocha'
 
 
 class GraphTest < Minitest::Test
@@ -48,40 +45,58 @@ class GraphTest < Minitest::Test
     dummy_node = nil
     refute g.has_node? dummy_node
   end
+
+  # Since this can be confusing (what if you are actually testing
+  # what happens if nil is sent in?), usually you will make an object
+  # or a "plain mock" if you want a dummy.
+ 
+  def test_has_node_dummy_with_obj
+    g = Graph::new
+    dummy_node = Minitest::Mock.new("test node")
+    refute g.has_node? dummy_node
+  end
+
   
   # Sometimes, though, a dummy isn't enough, because we need a real
   # object of the right class there.  This is where we can use a
   # test double with a stub.
   # This allows us to bypass any issues in the doubled class.
-  # Even if id does not work,
+  # Even if id on node does not work, graph - the
+  # actual code under test - can still be tested!
+  # Create a double (many frameworks - including Minitest do not
+  # make a big differentiation between mocks and doubles.  But
+  # remember - a true mock is a subclass of test double which
+  # does verification ("expects" calls)
+
   
   def test_add_node_double
     g = Graph::new
-    n = Node.new 7, [1,2]
-    Node.any_instance.stubs(:id).returns(1)
-    # Note - this will print 1, NOT 7!
-    # puts n.id
-    # But THIS will show Node 7: [ 1,2 ]
-    # g.print
-    # Why? Because this only covers the call to
-    # id, whereas Node.to_s looks at @id directly
+    # Make a mock named "node"
+    # This can be named anything you want
+    n = Minitest::Mock.new("test_node")
+    # Define a  method specifically for this object - this
+    # method definition does NOT impact the class "Node"!
+    def n.id; 1; end
+    # Add node to graph.  When .id is called on n in the Graph
+    # .add_node method, it will actually call our stub
     g.add_node n
+    # Assert 
     assert_equal 1, g.num_nodes
   end
 
-  # We may also want to verify that id gets called
-  # exactly ONE time when we add a node.
+  # We may also want to verify that id gets called.
   # This is where we can use a mock.
   # A mock is a double which verifies that a method
   # is called a certain number of times.
   
   def test_add_node_mock
     g = Graph::new
-    mocked_node = Mocha::Mock::new 'a'
     # If you comment out the .id reference in
     # graph.add_node, this will fail
-    mocked_node.expects(:id).once
+    mocked_node = Minitest::Mock.new("mocked node")
+    mocked_node.expect :id, true
     g.add_node mocked_node
+    assert_mock mocked_node
   end
   
 end
