@@ -2,17 +2,26 @@ require 'minitest/autorun'
 
 require_relative 'graph'
 
-
 class GraphTest < Minitest::Test
 
-  # A very simple test to get you back into the swing of things!
+  # Special method!
+  # This will run the following code before each test
+  # We will re-use the @g instance variable in each method
+  # This was we don't have to type g = Graph::new in each test
+  
+  def setup
+    @g = Graph::new    
+  end
+  
+  # Remember tests must start with test_ !
+  
+  # A very simple test to get you into the swing of things!
   # Creates a graph, refutes that it's nil, and asserts that it is a
   # kind of Graph object.
   
   def test_new_graph_not_nil
-    g = Graph::new
-    refute_nil g
-    assert_kind_of Graph, g
+    refute_nil @g
+    assert_kind_of Graph, @g
   end
 
   # This is a "regular" add node test.
@@ -23,11 +32,10 @@ class GraphTest < Minitest::Test
   
   def test_add_node
     n = Node::new 1, [2,3]
-    g = Graph::new
     
-    g.add_node n
+    @g.add_node n
 
-    assert_equal g.num_nodes, 1
+    assert_equal @g.num_nodes, 1
     
   end
 
@@ -41,9 +49,8 @@ class GraphTest < Minitest::Test
  
   
   def test_has_node_dummy
-    g = Graph::new
     dummy_node = nil
-    refute g.has_node? dummy_node
+    refute @g.has_node? dummy_node
   end
 
   # Since this can be confusing (what if you are actually testing
@@ -51,9 +58,8 @@ class GraphTest < Minitest::Test
   # or a "plain mock" if you want a dummy.
  
   def test_has_node_dummy_with_obj
-    g = Graph::new
     dummy_node = Minitest::Mock.new("test node")
-    refute g.has_node? dummy_node
+    refute @g.has_node? dummy_node
   end
 
   
@@ -70,7 +76,6 @@ class GraphTest < Minitest::Test
 
   
   def test_add_node_double
-    g = Graph::new
     # Make a mock named "node"
     # This can be named anything you want
     n = Minitest::Mock.new("test_node")
@@ -79,9 +84,9 @@ class GraphTest < Minitest::Test
     def n.id; 1; end
     # Add node to graph.  When .id is called on n in the Graph
     # .add_node method, it will actually call our stub
-    g.add_node n
+    @g.add_node n
     # Assert 
-    assert_equal 1, g.num_nodes
+    assert_equal 1, @g.num_nodes
   end
 
   # We may also want to verify that id gets called.
@@ -90,13 +95,22 @@ class GraphTest < Minitest::Test
   # is called a certain number of times.
   
   def test_add_node_mock
-    g = Graph::new
     # If you comment out the .id reference in
     # graph.add_node, this will fail
     mocked_node = Minitest::Mock.new("mocked node")
     mocked_node.expect :id, true
-    g.add_node mocked_node
+    @g.add_node mocked_node
     assert_mock mocked_node
+  end
+
+  
+  
+  def test_f
+    flunk
+  end
+
+  def test_b
+    flunk
   end
   
 end
