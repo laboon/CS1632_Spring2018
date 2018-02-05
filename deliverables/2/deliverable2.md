@@ -122,7 +122,10 @@ I remind you that grammar and good code count as well as functionality.  By good
 
 The program must be run by typing "ruby city_sim_9006.rb" (with an optional seed parameter) at the command line.  It will be run using Ruby 2.5.0 and so I recommend you ensure that you have the same version.  You should be fine with Ruby 2.2.0 or above (changes have been relatively minor since then), but I recommend that you use the latest version just to be safe.
 
-The unit tests must be run by typing "ruby *_test.rb" at the command line.
+The unit tests must be run by typing the following at the command line:
+
+1. `for file in *_test.rb; do ruby $file; done` (OS X, Linux, or other Unix-like OS running bash)
+2. "ruby foo_test.rb", "ruby bar_test.rb" for each of the test files
 
 ## Grading Breakdown
 * Summary and Testing Concerns- 10%

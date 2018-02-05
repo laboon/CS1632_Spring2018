@@ -7,7 +7,7 @@
 # Note that you can add a .rb or not
 
 require 'minitest/autorun'
-require_relative 'magic_ball'
+require_relative 'predictor'
 
 # This shows subclassing in action!  PredictorTest is a subclass of Minitest::Test
 # This would be similar to:
