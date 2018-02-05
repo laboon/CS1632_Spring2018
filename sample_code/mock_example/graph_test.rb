@@ -102,15 +102,5 @@ class GraphTest < Minitest::Test
     @g.add_node mocked_node
     assert_mock mocked_node
   end
-
-  
-  
-  def test_f
-    flunk
-  end
-
-  def test_b
-    flunk
-  end
   
 end
