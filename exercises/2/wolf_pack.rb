@@ -2,6 +2,14 @@ require_relative "wolf"
 
 class WolfPack
 
+  # This allows us to access @wolves externally from the object
+  # It acts kind of like "public" in Java.
+  # Example:
+  # wolf_pack = WolfPack::mew
+  # wolf_pack.wolves.count
+  # ^- This will return 0
+  # wolf_pack.wolves << Wolf::new "joe", 5
+  # ^- This will add a new wolf named joe, size of 5
   attr_accessor :wolves
 
   # Create a new wolf pack, with no wolves
@@ -16,13 +24,13 @@ class WolfPack
     # TODO
   end
 
-  # Make one random wolf in pack bark by calling their
-  # .bark method.  If there are no wolves, do nothing.
-  def one_bark
+  # Return the name of one random wolf in the pack.
+  # If there are no wolves, return nil.
+  def one_wolf
     # TODO
   end
 
-  # Create a new wolf and add it to the pack
+  # Add a new wolf to the pack
   def add_wolf wolf
     # TODO
   end
