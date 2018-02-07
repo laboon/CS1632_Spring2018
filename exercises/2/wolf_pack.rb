@@ -2,8 +2,8 @@ require_relative "wolf"
 
 class WolfPack
 
-  attr_reader :wolves
-  
+  attr_accessor :wolves
+
   # Create a new wolf pack, with no wolves
   def initialize
     @wolves = []
@@ -23,8 +23,9 @@ class WolfPack
   end
 
   # Create a new wolf and add it to the pack
-  def add_wolf name, size
+  def add_wolf wolf
     # TODO
+    @wolves << wolf
   end
 
   # Return the wolf with the largest size in @wolves
