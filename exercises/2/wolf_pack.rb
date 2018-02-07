@@ -5,7 +5,7 @@ class WolfPack
   # This allows us to access @wolves externally from the object
   # It acts kind of like "public" in Java.
   # Example:
-  # wolf_pack = WolfPack::mew
+  # wolf_pack = WolfPack::new
   # wolf_pack.wolves.count
   # ^- This will return 0
   # wolf_pack.wolves << Wolf::new "joe", 5
