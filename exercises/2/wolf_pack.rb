@@ -1,3 +1,5 @@
+require_relative "wolf"
+
 class WolfPack
 
   attr_reader :wolves
