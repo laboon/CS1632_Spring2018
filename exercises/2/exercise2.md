@@ -1,7 +1,7 @@
 # CS 1632 - Software Quality Assurance
 Spring Semester 2017 - Exercise 2
 
-For this exercise, you and a partner will create a WolfPack simulator.  However, the Wolf class on which it depends is broken!  You will need to use stubs and doubles in order to write your own code and test it.
+For this exercise, you and a partner will create a WolfPack simulator.  However, the Wolf class on which it depends is broken!  You will need to use stubs, dummies, doubles and mocks in order to write your own code and test it.
 
 You are NOT to modify the Wolf class itself, i.e., wolf.rb should not be edited.  You may assume that it is a third-party library or code belonging to another team.
 
