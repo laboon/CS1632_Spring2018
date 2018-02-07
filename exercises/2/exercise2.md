@@ -15,7 +15,7 @@ This is an exercise and is thus not graded.
 
 The Wolf Pack Simulator allows you to add a wolf, determine the biggest wolf in the pack, make one random wolf bark, or make all the wolves in the pack howl.
 
-You are going to modify the methods and write tests for these relatively simple methods, with your tests not referring to 
+You are going to modify the methods and write tests for these relatively simple methods, with your tests not referring directly to the class wolf.  Note that your CODE should not use doubles, only your tests.
 
 You should write at least one test for each method, and stub or double when appropriate.  Ideally, you should do an equivalence class partioning and write a test for each equivalence class, but this is not necessary for this exercise.
 
