@@ -1,5 +1,7 @@
 class WolfPack
 
+  attr_reader :wolves
+  
   # Create a new wolf pack, with no wolves
   def initialize
     @wolves = []

@@ -3,8 +3,6 @@ class Wolf
   # Create a new wolf
   
   def initialize name, size
-    sleep 5
-
     @name = name
     @size = size
   end

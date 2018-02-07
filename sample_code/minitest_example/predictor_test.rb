@@ -41,7 +41,7 @@ class PredictorTest < Minitest::Test
     assert magic_ball.is_a?(Predictor)
   end
 
-  # Very simple test - check that creating a new Predictor creates
+  # Very simple test - check that c# reating a new Predictor creates
   # a new Predictor and verifies that it is not nil.
   # nil is similar to Java's null
   # refute can be read as "assert not" - that is, refute_nil would
@@ -114,7 +114,7 @@ class PredictorTest < Minitest::Test
       magic_ball.ask("This is not a question")
     end
   end
-
+  
   # Check that the magic ball has :ask and :shake methods
   # but does NOT have a :roll method.
   
