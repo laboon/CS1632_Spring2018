@@ -25,7 +25,6 @@ class WolfPack
   # Create a new wolf and add it to the pack
   def add_wolf wolf
     # TODO
-    @wolves << wolf
   end
 
   # Return the wolf with the largest size in @wolves
