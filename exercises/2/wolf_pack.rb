@@ -35,7 +35,7 @@ class WolfPack
     # TODO
   end
 
-  # Return the size wolf with the largest size in @wolves
+  # Return the size of the wolf with the largest size in @wolves
   def biggest_wolf
     # TODO
   end
