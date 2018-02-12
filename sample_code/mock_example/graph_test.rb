@@ -99,6 +99,7 @@ class GraphTest < Minitest::Test
     # graph.add_node, this will fail
     mocked_node = Minitest::Mock.new("mocked node")
     mocked_node.expect :id, true
+    mocked_node.expect :id, true
     @g.add_node mocked_node
     assert_mock mocked_node
   end

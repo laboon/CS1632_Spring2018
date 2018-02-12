@@ -16,6 +16,7 @@ class Graph
   
   def add_node node
     @nodes[node.id] = node
+    node.id
   end
 
   def is_pseudograph?
