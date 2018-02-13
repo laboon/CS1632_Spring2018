@@ -120,7 +120,7 @@ Before each test, add some comments (two or three sentences, on average) explain
 ## Grading
 I remind you that grammar and good code count as well as functionality.  By good code, I mean: no commented-out code unless there's an EXPLICIT reason, properly indented code, no misspelled words  bad grammar, in comments or summaries, etc.
 
-The program must be run by typing "ruby city_sim_9006.rb" (with an optional seed parameter) at the command line.  It will be run using Ruby 2.5.0 and so I recommend you ensure that you have the same version.  You should be fine with Ruby 2.2.0 or above (changes have been relatively minor since then), but I recommend that you use the latest version just to be safe.
+The program must be run by typing "ruby city_sim_9006.rb" (with a seed parameter) at the command line.  It will be run using Ruby 2.5.0 and so I recommend you ensure that you have the same version.  You should be fine with Ruby 2.2.0 or above (changes have been relatively minor since then), but I recommend that you use the latest version just to be safe.
 
 The unit tests must be run by typing the following at the command line:
 
