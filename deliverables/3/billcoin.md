@@ -17,23 +17,23 @@ If this were an actual cryptocurrency, this is where the "nonce" value would com
 Let's look at a sample Billcoin blockchain (this is a copy of the actual file `sample.txt` in this directory):
 
 ```
-0|0|SYSTEM>Mzila(100)|1518836425.189598000|1d26
-1|1d26|Mzila>Maria(20):Maria>Kaya(3):Mzila>George(8):Maria>Henry(3):Kaya>Anne(1):George>Pakal(1):SYSTEM>Edward(100)|1518836425.190366000|862a
-2|862a|SYSTEM>Gaozu(100)|1518836425.191525000|79ef
-3|79ef|SYSTEM>George(100)|1518836425.191734000|833a
-4|833a|Mzila>Sheba(6):SYSTEM>Sheba(100)|1518836425.192032000|6f40
-5|6f40|Pakal>Mary(1):Mzila>Louis(11):Louis>Anne(1):SYSTEM>Gaozu(100)|1518836425.192434000|33e9
-6|33e9|Henry>Sheba(1):SYSTEM>George(100)|1518836425.192916000|1b37
-7|1b37|George>Maria(2):SYSTEM>Peter(100)|1518836425.193262000|7c03
-8|7c03|Gaozu>Henry(8):SYSTEM>Rana(100)|1518836425.193665000|96c5
-9|96c5|Rana>Yaa(9):Edward>Tang(16):Anne>Kublai(1):Louis>James(1):SYSTEM>Kublai(100)|1518836425.194049000|624c
+0|0|SYSTEM>James(100)|1518838270.539070000|fb6c
+1|fb6c|James>Anne(15):James>Edward(5):James>Kublai(16):Anne>Sheba(2):Sheba>Anne(1):James>Tang(3):Kublai>Mzila(4):Mzila>Amina(1):Anne>Kublai(3):Anne>Kaya(1):Edward>Rana(1):Amina>Yaa(1):Sheba>Anne(1):Edward>Rana(1):Anne>Anne(1):Yaa>Louis(1):SYSTEM>Edward(100)|1518838270.542891000|df20
+2|df20|SYSTEM>Henry(100)|1518838270.569701000|f463
+3|f463|Kublai>Anne(3):Mzila>Mary(1):Henry>Anne(20):Kublai>Amina(1):Henry>Kaya(13):James>Anne(1):Rana>Anne(1):Henry>Sheba(7):Louis>Tang(1):Kublai>Pakal(1):Mzila>Amina(1):SYSTEM>Xerxes(100)|1518838270.573507000|9a
+4|9a|Anne>Cyrus(6):Mzila>Yaa(1):Yaa>Pakal(1):Kaya>Kublai(2):Henry>Tang(3):SYSTEM>Rana(100)|1518838270.595221000|eced
+5|eced|SYSTEM>Rana(100)|1518838270.605237000|792c
+6|792c|Amina>Tang(1):James>Tang(4):SYSTEM>James(100)|1518838270.608756000|2b7d
+7|2b7d|Amina>Henry(1):Henry>Edward(5):Mary>Mzila(1):James>Tang(12):Tang>Pakal(2):Pakal>Cyrus(1):Tang>George(2):Cyrus>Kublai(2):SYSTEM>Louis(100)|1518838270.616774000|d007
+8|d007|George>Sheba(1):Tang>Pakal(1):SYSTEM>Amina(100)|1518838270.635223000|9777
+9|9777|Louis>Gaozu(17):SYSTEM>Louis(100)|1518838270.641042000|2da7
 ```
 
 Each line consists of one block.  A block consists of the following elements, separated by pipes (`|` characters):
 
 1. The block number (increments each block)
 2. The hash of the previous block (note that this is 0 for the first, or "genesis", block)
-3. A sequence of transactions, separated by colons (`:` characters).  Each transaction is of the form FROM_ADDR>TO_ADDR(NUM_BILLCOINS_SENT).  FROM_ADDR and TO_ADDR are addresses, which consist of six or fewer alphabetic characters (`A-Za-z`, case-sensitive).  The value in parentheses, NUM_BILLCOINS_SENT, is the number of billcoins sent from FROM_ADDR to TO_ADDR.  For example, `Mzila>Sheba(6)` indicates that the address "Mzila" sent 6 billcoins to address "Sheba" in this block.
+3. A sequence of transactions, separated by colons (`:` characters).  Each transaction is of the form FROM_ADDR>TO_ADDR(NUM_BILLCOINS_SENT).  FROM_ADDR and TO_ADDR are addresses, which consist of six or fewer alphabetic characters (`A-Za-z`, case-sensitive).  The value in parentheses, NUM_BILLCOINS_SENT, is the number of billcoins sent from FROM_ADDR to TO_ADDR.  For example, `Mzila>Sheba(6)` indicates that the address "Mzila" sent 6 billcoins to address "Sheba".
   * Note that the last transaction is from the SYSTEM itself.  This is the reward for creating a block and in our case is given to a random user.  This is the only way billcoins are "minted".  The last transaction of a block should ALWAYS be from SYSTEM.  Every block should thus always have AT LEAST one transaction.
 5. A timestamp, consisting of seconds since the epoch, then a period, and the number of nanoseconds in that current second when the block was created.  This number should always increase from the previous block's timestamp.  It should never be the same or move "backwards in time".
 6. A hash of the first five elements of the string, using the algorithm:
