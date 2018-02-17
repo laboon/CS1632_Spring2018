@@ -63,7 +63,3 @@ Note that this project is a very, very simple implementation of a blockchain, mi
 4. "Mastering Bitcoin" by Andreas Antonopoulos (book on the technical details of Bitcoin)
 5. "Introducing Ethereum and Solidity" by Chris Dannen (book introducing Ethereum)
 
-
-Note that the initial "previous hash" is zero in the first transaction.
-
-
