@@ -1,0 +1,120 @@
+$ ruby verifier.rb sample.txt 
+Henry: 120 billcoins
+George: 168 billcoins
+Amina: 293 billcoins
+James: 15 billcoins
+Cyrus: 13 billcoins
+Kublai: 103 billcoins
+Rana: 1 billcoins
+Wu: 85 billcoins
+Pakal: 32 billcoins
+Peter: 9 billcoins
+Sheba: 0 billcoins
+Louis: 1 billcoins
+Kaya: 0 billcoins
+Tang: 104 billcoins
+Xerxes: 1 billcoins
+Edward: 54 billcoins
+Alfred: 1 billcoins
+
+$ ruby verifier.rb 100.txt
+Gaozu: 602 billcoins
+Cyrus: 330 billcoins
+Rana: 321 billcoins
+Alfred: 491 billcoins
+Yaa: 397 billcoins
+George: 136 billcoins
+Edward: 324 billcoins
+Pakal: 699 billcoins
+Tang: 427 billcoins
+Peter: 649 billcoins
+Mary: 176 billcoins
+Xerxes: 293 billcoins
+James: 422 billcoins
+Amina: 538 billcoins
+Louis: 537 billcoins
+Anne: 569 billcoins
+Wu: 251 billcoins
+Henry: 172 billcoins
+Maria: 325 billcoins
+Kaya: 462 billcoins
+Puyi: 644 billcoins
+Mzila: 277 billcoins
+Kublai: 560 billcoins
+Sheba: 398 billcoins
+
+$ ruby verifier.rb 1000.txt
+George: 4471 billcoins
+Henry: 5076 billcoins
+Alfred: 5278 billcoins
+Kublai: 5766 billcoins
+Mzila: 4169 billcoins
+Mary: 4903 billcoins
+Pakal: 3544 billcoins
+Amina: 3243 billcoins
+Tang: 2441 billcoins
+Edward: 7556 billcoins
+Gaozu: 1626 billcoins
+Yaa: 4729 billcoins
+James: 6307 billcoins
+Anne: 1999 billcoins
+Kaya: 4821 billcoins
+Sheba: 3626 billcoins
+Cyrus: 4352 billcoins
+Peter: 2902 billcoins
+Louis: 5412 billcoins
+Puyi: 2139 billcoins
+Maria: 5516 billcoins
+Wu: 1481 billcoins
+Xerxes: 3082 billcoins
+Rana: 5561 billcoins
+
+$ ruby verifier.rb long.txt 
+Louis: 69176 billcoins
+Kublai: 28521 billcoins
+Puyi: 22716 billcoins
+Sheba: 45465 billcoins
+Wu: 20653 billcoins
+Rana: 69620 billcoins
+Peter: 32924 billcoins
+Amina: 63619 billcoins
+Henry: 40421 billcoins
+George: 62749 billcoins
+Tang: 22075 billcoins
+Maria: 28085 billcoins
+Cyrus: 54263 billcoins
+Mzila: 45332 billcoins
+Kaya: 41972 billcoins
+Anne: 64205 billcoins
+James: 29207 billcoins
+Edward: 41888 billcoins
+Gaozu: 27790 billcoins
+Alfred: 29380 billcoins
+Yaa: 61112 billcoins
+Pakal: 40712 billcoins
+Xerxes: 22916 billcoins
+Mary: 35199 billcoins
+
+$ ruby verifier.rb out_of_order.txt 
+Line 2: Invalid block number 9, should be 2
+BLOCKCHAIN INVALID
+
+$ ruby verifier.rb bad_prev_hash.txt 
+Line 7: Previous hash was 6666, should be 949
+BLOCKCHAIN INVALID
+
+$ ruby verifier.rb bad_hash.txt 
+Line 2: String '2|abb2|George>Amina(16):Henry>James(4):Henry>Cyrus(17):Henry>Kublai(4):George>Rana(1):SYSTEM>Wu(100)|1518892051.753197000' hash set to c66d, should be c72d
+BLOCKCHAIN INVALID
+
+$ ruby verifier.rb bad_tx.txt 
+Line 4: Invalid block, address Kublai has -796 billcoins!
+BLOCKCHAIN INVALID
+
+$ ruby verifier.rb bad_seconds_timestamp.txt
+Line 8: Previous timestamp 1518892053.799497000 >= new timestamp 1518892051.812065000
+BLOCKCHAIN INVALID
+
+$ ruby verifier.rb bad_nanoseconds_timestamp.txt
+Line 7: Previous timestamp 1518892051.793695000 >= new timestamp 1518892051.199497000
+BLOCKCHAIN INVALID

@@ -7,7 +7,7 @@ DUE 12 MAR (MON/WED) / 13 MAR (TUE/THU)
 
 In this deliverable, you and a partner will write software to verify if a simple blockchain is valid.
 
-Under _no_ circumstances should the program crash or should the user see an exception or stack trace.  You should handle all edge cases that might be thrown at you, such as a non-existent file, no arguments, different failure modes, etc.
+Under _no_ circumstances should the program crash or should the user see an exception or stack trace directly.  You should handle all edge cases that might be thrown at you, such as a non-existent file, no arguments, different failure modes, etc.
 
 The program shall accept one argument, which is the name of a file which should contain a valid Billcoin blockchain (see billcoin.rb in this directory).  Your program will read in and either determine if it is valid (in which case you should print out all of the address which have billcoins and how many), or invalid (in which case you should print out what the error is).
 
@@ -26,18 +26,25 @@ Every assignment should have a title page with:
 
 There is no need to print out the code.  It should be available on GitHub BY THE BEGINNING OF CLASS.
 
-For the summary, describe how you profiled the application and determined the methods to refactor, and why you changed what you did.  The summary should not be more than a few paragraphs - definitely less than a page. 
+For the summary, describe how you profiled the application in approximately one page.  You should answer the following questions in your summary:
 
-You should include a screenshot of the flame graph _as well as_ including the .html file in your repository.
+1. What was most challenging about this deliverable?
+1. What kind of edge cases and failure modes did you consider?
+1. Using the flame graph, what methods were taking up the most CPU time?
+1. Did you make any changes based on the flame graph or timing?
+
+The summary should be approximately a page. 
+
+On a separate page, you should include a screenshot of the flame graph.  You should  _alsi_ include the generated .html file in your repository.
 
 There should be at least twelve unit tests.  It is up to you if you would like to use more, use mocks/doubles/stubs, etc.  There just must be at least twelve valid unit tests.
 
-You should time program with the sample file three times AND indicate the mean and median amount of time it took to execute.  You can do this with the `time` command in Unix-like systems (Linux, OS X, BSD) or the `Measure-Command` command in PowerShell on Windows systems.
+You should time the program with the `long.txt` file three times AND indicate the mean and median amount of real ("wall clock") time it took to execute.  You can do this with the `time` command in Unix-like systems (Linux, OS X, BSD) or the `Measure-Command` command in PowerShell on Windows systems.
 
 ## Grading
-* Summary - 5%
+* Summary - 10%
 * Flame graph - 10%
 * Final times (>= 3 of each + mean) included - 5%
-* Code and Execution Speed - 55%
+* Functionality - 50%
 * Unit Tests - 25%
 

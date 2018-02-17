@@ -1,10 +1,10 @@
 0|0|SYSTEM>Henry(100)|1518892051.737141000|1c12
 1|1c12|SYSTEM>George(100)|1518892051.740967000|abb2
-2|abb2|George>Amina(16):Henry>James(4):Henry>Cyrus(17):Henry>Kublai(4):George>Rana(1):SYSTEM>Wu(100)|1518892051.753197000|c72d
+9|abb2|George>Amina(16):Henry>James(4):Henry>Cyrus(17):Henry>Kublai(4):George>Rana(1):SYSTEM>Wu(100)|1518892051.753197000|c72d
 3|c72d|SYSTEM>Henry(100)|1518892051.764563000|7419
 4|7419|Kublai>Pakal(1):Henry>Peter(10):Cyrus>Amina(3):Peter>Sheba(1):Cyrus>Louis(1):Pakal>Kaya(1):Amina>Tang(4):Kaya>Xerxes(1):SYSTEM>Amina(100)|1518892051.768449000|97df
 5|97df|Henry>Edward(23):Rana>Alfred(1):James>Rana(1):SYSTEM>George(100)|1518892051.783448000|d072
 6|d072|Wu>Edward(16):SYSTEM>Amina(100)|1518892051.793695000|949
 7|949|Louis>Louis(1):George>Edward(15):Sheba>Wu(1):Henry>James(12):Amina>Pakal(22):SYSTEM>Kublai(100)|1518892051.799497000|32aa
 8|32aa|SYSTEM>Tang(100)|1518892051.812065000|775a
-9|775a|Henry>Pakal(10):SYSTEM>Amina(100)|1518892051.815834000|2d7f
+2|775a|Henry>Pakal(10):SYSTEM>Amina(100)|1518892051.815834000|2d7f
