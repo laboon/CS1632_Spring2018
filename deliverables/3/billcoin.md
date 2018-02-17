@@ -38,7 +38,7 @@ Each line consists of one block.  A block consists of the following elements, se
 5. A timestamp, consisting of seconds since the epoch, then a period, and the number of nanoseconds in that current second when the block was created.  This number should always increase from the previous block's timestamp.  It should never be the same or move "backwards in time".
 6. A hash of the first five elements of the string, using the algorithm:
   * Unpack each character via U* (`string_to_hash.unpack('U*'), converting to a value
-  * For each value in the string, x, perform the following calculation (x ** 20) * ((x + 2) ** 21) - ((x + 5) ** 3) and store that value
+  * For each value in the string, x, perform the following calculation (x ** 2000) * ((x + 2) ** 21) - ((x + 5) ** 3) and store that value
   * Sum up all of those values
   * Determine that value modulo 65536
   * Print out the resulting value in base-16 (hexadecimal)
