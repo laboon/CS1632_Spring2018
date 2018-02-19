@@ -17,7 +17,7 @@ You will use the flamegraph gem to determine execution "hot spots".
 
 You will use the `time` command (or Measure-Command for Windows) to determine total execution time.
 
-You should explain how your program has been sped up in your summary.  You should do at least one modification to speed it up after your initial coding.
+You should explain how your program has been sped up in your summary.
 
 ## Format
 Every assignment should have a title page with:
@@ -40,6 +40,8 @@ On a separate page, you should include a screenshot of the flame graph.  You sho
 There should be at least twelve unit tests.  It is up to you if you would like to use more, use mocks/doubles/stubs or not, etc.  There just must be at least twelve valid unit tests.
 
 You should time the program with the `long.txt` file three times AND indicate the mean and median amount of real ("wall clock") time it took to execute.  You can do this with the `time` command in Unix-like systems (Linux, OS X, BSD) or the `Measure-Command` command in PowerShell on Windows systems.  All three of these times should be listed ALONG with the MEAN and MEDIAN time to execute the program with `long.txt` on a separate page.
+
+You may in this assignment one class late but you will receive a -20% penalty.
 
 ## Grading
 * Summary - 10%
