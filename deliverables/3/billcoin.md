@@ -45,8 +45,6 @@ Each line consists of one block.  A block consists of the following elements, se
   * Determine that value modulo 65536
   * Print out the resulting value in base-16 (hexadecimal)
 
-There is no specific order that you need to print out the addresses and their associated number of billcoins.
-
 Transactions must be valid on a per-block basis.  This means that there may be a point mid-way through the block that an address has a negative balance, but every address should have a nonnegative balance (>= 0) by the end of the block.
 
 For example, assume Joe has 5 billcoins in his account and Sam has 0, and you receive this block.
@@ -61,13 +59,13 @@ There are many reasons that a blockchain will fail to be verified.  I expect you
 
 1. Hash or previous hash is not correct
 2. Timestamp does not increase monotonically
-3. An address, at any point, has a negative balance
+3. An address, at the end of any block, has a negative balance
 4. An invalid address (> 6 alphabetic characters)
 5. An invalid character was found on a line
 
 Upon discovering an error in verification, your program shall indicate which line contains the error and what the error is (e.g., invalid character, invalid address, timestamp did not increase, etc.)  If possible, it should indicate what it _expected_ the value to be.  This will not be possible for things like "unable to parse line" errors, but for things such as bad previous hash, 
 
-Otherwise, if the blockchain is entirely valid, your program should print out all addresses and their associated number of billcoins.
+Otherwise, if the blockchain is entirely valid, your program should print out all addresses and their associated number of billcoins.  There is no specific order that you need to print out the addresses and their associated number of billcoins.
 
 See the `sample_output.txt` file in this directory for the correct output for a variety of different errors.
 
