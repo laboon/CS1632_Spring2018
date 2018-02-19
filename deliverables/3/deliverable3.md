@@ -35,7 +35,7 @@ For the summary, describe how you profiled the application in approximately one 
 
 The summary should be approximately a page. 
 
-On a separate page, you should include a screenshot of the flame graph.  You should  _alsi_ include the generated .html file in your repository.
+On a separate page, you should include a screenshot of the flame graph.  You should  _also_ include the generated .html file in your repository.
 
 There should be at least twelve unit tests.  It is up to you if you would like to use more, use mocks/doubles/stubs, etc.  There just must be at least twelve valid unit tests.
 
