@@ -91,12 +91,12 @@ The following format should be used:
 
 # If a negative value is given for x, then -x is returned.
 def test_negative_val
-  assert_equals 1, absolute_value(-1)
+  assert_equal 1, absolute_value(-1)
 end
 
 # If a positive value is given for x, then x is returned.
 def test_positive_val
-  assert_equals 1, absolute_value(1)
+  assert_equal 1, absolute_value(1)
 end
 
 # If an invalid value, such as a string, is given for x,
