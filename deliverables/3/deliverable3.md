@@ -43,7 +43,7 @@ There should be at least twelve unit tests.  It is up to you if you would like t
 
 You should time the program with the `long.txt` file three times AND indicate the mean and median amount of real ("wall clock") time it took to execute.  You can do this with the `time` command in Unix-like systems (Linux, OS X, BSD) or the `Measure-Command` command in PowerShell on Windows systems.  All three of these times should be listed ALONG with the MEAN and MEDIAN time to execute the program with `long.txt` on a separate page.
 
-You may in this assignment one class late but you will receive a -20% penalty.
+You may turn in this assignment one class late but you will receive a -20% penalty.
 
 ## Grading
 * Summary - 10%
