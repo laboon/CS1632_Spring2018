@@ -19,7 +19,7 @@ You will use the flamegraph gem to determine execution "hot spots".
 
 You will use the `time` command (or Measure-Command for Windows) to determine total execution time.
 
-You should explain how your program has been sped up in your summary.
+If you have done so, you should explain how your program has been sped up in your summary.
 
 ## Format
 Every assignment should have a title page with:
