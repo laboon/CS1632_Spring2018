@@ -24,6 +24,7 @@ If you have done so, you should explain how your program has been sped up in you
 ## Format
 Every assignment should have a title page with:
 * The name of the students in the group and their GitHub usernames
+* A link to your repository
 * The title "CS 1632 - DELIVERABLE 3: Performance Testing "
 
 There is no need to print out the code.  It should be available on GitHub BY THE BEGINNING OF CLASS.
