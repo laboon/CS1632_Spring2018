@@ -12,7 +12,7 @@ FUN-START-LOC. A driver may start in any of the four locations listed in FUN-CIT
 
 FUN-ITERATION. At each iteration, a Driver will drive from the current Location to one of the possible Locations that can be reached from the original Location.  The decision shall be made pseudorandomly based on a seed passed in from the command line, as covered by FUN-ARGS.
 
-FUN-ARGS. The system shall accept an integer seed from the command line for the pseudorandom number generator.  No other arguments shall be accepted.  If no arguments are provided,  more than one argument is provided, the system shall inform the user and exit.  If the argument is not a valid integer, the program shall assume the user meant the seed 0.
+FUN-ARGS. The system shall accept an integer seed from the command line for the pseudorandom number generator.  No other arguments shall be accepted.  If no arguments are provided, or more than one argument is provided, the system shall inform the user and exit.  If the argument is not a valid integer, the program shall assume the user meant the seed 0.
 
 FUN-OTHER-PLACES. If a driver exits the city via Fourth Avenue, then the program shall display that the driver has gone to Monroeville.  If a driver exits the city via Fifth Avenue, then the program shall display that the driver has gone to Downtown.
 
