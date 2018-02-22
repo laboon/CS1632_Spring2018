@@ -30,8 +30,14 @@ In case of ambiguity in the requirements, the sample_runs.txt file shall be cons
 
 If you encounter an infinite loop (where, if the algorithm is implemented correctly, the first monkey NEVER gets the banana), you will receive a __sizable__ amount of extra credit, assuming you let me know the initial number you entered.
 
+Some good numbers to try are 54, 3711, 10971, or 13255, any of which will take quite a few iterations to complete and should take at least 2 - 10 seconds on the non-optimized code to run (depending on your computer).  The smallest number of iterations can be found with the value 1. 
+
 In order to determine the "hot spots" of the application, you will use the flamegraph gem.  Using a profiler, determine a method you can use to measurably increase the speed of the application without modifying behavior.
 
-This program should work EXACTLY the same as before, except it should be faster and take up less CPU time.  You can prove this by checking the monkey_sim pinning tests includes.
+Flamegraph works by sampling the call stack (i.e. doing a stack trace) numerous times per second.  This ends up looking a little bit like a fire (thus, flame graph).  By running flamegrapher.rb, you can see how `problematic_method` is taking up most of the CPU time.
+
+By viewing the generated "monkey_sim.html" flame graph, you can see which method(s) are taking up the most CPU time.  
+
+This program should work EXACTLY the same as before, except it should be faster and take up less CPU time.  You can prove this by running the monkey_sim unit tests (in monkey_sim_test.rb).   If any tests fail, you have introduced a regression failure!  You can check that it takes less time to run by using the `time` command (or `Measure-Command` command in Windows powershell).
 
 
