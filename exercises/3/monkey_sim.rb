@@ -11,7 +11,7 @@ require_relative 'monkey_list.rb'
 
 # EXECUTION STARTS HERE
 
-Flamegraph.generate('flame.html') do
+Flamegraph.generate('monkey_sim.html') do
 
   raise "Enter starting monkey number as an argument" unless ARGV.count == 1
   size = ARGV[0].to_i
