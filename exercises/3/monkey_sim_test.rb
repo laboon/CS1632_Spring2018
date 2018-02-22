@@ -244,6 +244,22 @@ class MonkeySimTest < Minitest::Test
     assert_equal 8, num_rounds
   end
 
+  # Check that trying to start with a negative integer raises
+  # an exception
+  def test_start_negative
+    ml = MonkeyList::new 1
+    assert_raises "Starting monkey must be a positive integer" do
+      ml.start -1
+    end
+  end
   
+  # Check that trying to start with 0 raises an exception
+  def test_start_negative
+    ml = MonkeyList::new 1
+    assert_raises "Starting monkey must be a positive integer" do
+      ml.start 0
+    end
+  end
+   
   
 end

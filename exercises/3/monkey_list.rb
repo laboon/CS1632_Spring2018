@@ -70,6 +70,7 @@ class MonkeyList
   end
   
   def start curr_monkey_num
+    raise "Starting monkey must be a positive integer" unless curr_monkey_num > 0
     count = 0
     until curr_monkey_num == 1
       @round += 1
