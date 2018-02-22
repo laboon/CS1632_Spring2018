@@ -9,7 +9,7 @@ In this deliverable, you and a partner will write software to verify if a simple
 
 Under _no_ circumstances should the program crash or should the user see an exception or stack trace directly.  You should handle all edge cases that might be thrown at you, such as a non-existent file, no arguments, different failure modes, etc.
 
-The program shall accept one argument, which is the name of a file which should contain a valid Billcoin blockchain (see billcoin.rb in this directory).  Your program will read in and either determine if it is valid (in which case you should print out all of the address which have billcoins and how many), or invalid (in which case you should print out what the error is).
+The program shall accept one argument, which is the name of a file which should contain a valid Billcoin blockchain (see billcoin.md in this directory).  Your program will read in and either determine if it is valid (in which case you should print out all of the address which have billcoins and how many), or invalid (in which case you should print out what the error is).
 
 The program shall be written in Ruby and called verifier.rb.
 
