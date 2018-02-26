@@ -20,17 +20,19 @@ If a monkey is odd-numbered (and not monkey #1), the monkey with the banana shal
 
 If Monkey #1 catches the banana, the system shall display the number of rounds it took for Monkey #1 to catch the banana and then the program shall exit.
 
-At each round, the current status of who is doing the throwing and who is catching shall be displayed, along with the round number (which should start at 1).  It should use the following format: "Round 1: Threw banana from Monkey (#54 / ID ) to Monkey (#27 / ID )"
+At each round, the current status of who is doing the throwing and who is catching shall be displayed, along with the round number (which should start at 1).  It should use the following format: "Round 1: Threw banana from Monkey (#54 / ID 387548) to Monkey (#27 / ID 387521)"
 
-Each monkey has an ID; this ID shall remain constant.  For instance, Monkey #5 shall always have ID , and Monkey #160 shall always have ID .  Any changes to the code should not modify the ID value.
+Each monkey has an ID; this ID shall remain constant.  For instance, Monkey #5 shall always have ID 387499, and Monkey #160 shall always have ID 387574.  Any changes to the code should not modify the ID value (that is, you can't just say that monkey #5 now has ID 5 - IDs should be a constant for a given monkey)
 
 Output for a given input should be EXACTLY the same as the initial output (i.e., you cannot just give each  monkey a random identifier).  Sample runs are shown in the sample_runs.txt file.  Please be sure that your code operates the exact same way as the initial code.
+
+I have included a file of unit tests (`monkey_sim_test.rb` - run with `ruby monkey_sim_test.rb`).  If all of these tests pass, you have probably not caused any regression failures.  If any fail, you most certainly did!
 
 In case of ambiguity in the requirements, the sample_runs.txt file shall be considered the correct implementation.
 
 If you encounter an infinite loop (where, if the algorithm is implemented correctly, the first monkey NEVER gets the banana), you will receive a __sizable__ amount of extra credit, assuming you let me know the initial number you entered.
 
-Some good numbers to try are 54, 3711, 10971, or 13255, any of which will take quite a few iterations to complete and should take at least 2 - 10 seconds on the non-optimized code to run (depending on your computer).  The smallest number of iterations can be found with the value 1. 
+Some good numbers to try for long-running tests are 54, 3711, 10971, or 13255, any of which will take quite a few iterations to complete and should take at least 2 - 10 seconds on the non-optimized code to run (depending on your computer).  The smallest number of iterations can be found with the value 1. Some medium-sized tests are starting with numbers 11, 13, and 160 (all will take around 10 iterations to complete).
 
 In order to determine the "hot spots" of the application, you will use the flamegraph gem.  Using a profiler, determine a method you can use to measurably increase the speed of the application without modifying behavior.
 
