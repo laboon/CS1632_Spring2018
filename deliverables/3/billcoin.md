@@ -51,7 +51,7 @@ Transactions must be valid on a per-block basis.  This means that there may be a
 For example, assume Joe has 5 billcoins in his account and Sam has 0, and you receive this block.
 
 ```
-8|e01d|Sam>John(3):Joe>Sam(4):SYSTEM>Rana(100)|1518839370.605237540|c922
+8|e01d|Sam>John(3):Joe>Sam(4):SYSTEM>Rana(100)|1518839370.605237540|c87b
 ```
 
 Your first thought might be that this is invalid, since Sam gave John 3 billcoins "before" Joe gave Sam 4 billcoins, and thus Sam has 0.  However, blocks are considered to be "instantaneous" as they collect information from a finite amount of time and from a distributed network, so the ordering is not fixed.  At the end of the block, Sam has 1 billcoin, John has 3 billcoins, and Joe has 1 billcoin, all of which are valid.
