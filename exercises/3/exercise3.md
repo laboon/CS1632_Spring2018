@@ -42,4 +42,14 @@ By viewing the generated "monkey_sim.html" flame graph, you can see which method
 
 This program should work EXACTLY the same as before, except it should be faster and take up less CPU time.  You can prove this by running the monkey_sim unit tests (in monkey_sim_test.rb).   If any tests fail, you have introduced a regression failure!  You can check that it takes less time to run by using the `time` command (or `Measure-Command` command in Windows powershell).
 
+## Steps
+
+1. Run `time ruby monkey_sim.rb 54` (if you are on OS X / Linux / FreeBSD or have access to a bash shell).  If you are Windows, you can either use the Windows Subsystem for Linux ( https://docs.microsoft.com/en-us/windows/wsl/install-win10 ) OR use PowerShell with the following command `Measure-Command { ruby monkey_sim.rb 54 }` Note that you will NOT get any output to STDOUT when using Measure-Command.  I recommend you run the monkey_sim by itself first if you are using Windows so you can see the correct output.
+2. Mark down the time this took to run.
+3. Run `bundle install`.  If you get an error installing stackprof, try installing fast_stack via the command line - `gem install fast_stack`.  If you get an error doing this, install DevKit ( https://rubyinstaller.org/add-ons/devkit.html ).  If you are using Ruby 2.4 or greater (which you should be, make sure you install the MSYS2 version).  If you are still getting an error, see me.
+4. Run `ruby monkey_sim.rb 13`.  This will generate a small flamegraph file (larger flamegraph files sometimes cause your browser to run out of memory and not display it) in `monkey_sim.html`.
+5. Open the monkey_sim.html file in your favorite browser.  This is a graphical view of the stack over time - flamegraph does this by looking at the stack trace approximately once per millisecond (varies based on computer and stack profiling gem, stackprof or fast_stack... note that, despite its name, fast_stack is actually slower than stackprof). To figure out which methods are using up the most CPU, look at the TOP of the stack over time.  Is there a method at the top that is staying there?  Note: if you are using fast_stack, ignore any `**` methods.
+6. Find the method that is causing some much CPU to be used up.  Try to understand what it is doing.  Modify it so that it takes up much less CPU.  Once you understand the issue, it should be a relatively simple process - you will not need to know any advanced math to make the modifications.  You may want to view how monkey numbers line up with monkey IDs for a clue.
+7. After making the modifications, run `ruby monkey_sim_test.rb` to ensure that you did not cause any regression failures.
+8. Run step 1 again and compare the original times to the new times.  You should have caused a significant speed-up.
 
