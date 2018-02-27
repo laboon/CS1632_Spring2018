@@ -43,7 +43,7 @@ Here are the key topics to study in preparation for the test.
 
 ## AUTOMATED TESTING
 * Pros and cons of automated testing
-* Unit tests vs system/acceptance/integration tests
+* Unit tests vs system tests
 
 ## UNIT TESTING
 * Unit tests
