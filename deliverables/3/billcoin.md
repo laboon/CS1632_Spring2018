@@ -76,6 +76,8 @@ After this is done, double-check that your program properly verifies `long.txt` 
 
 For your final timing and performance analysis, you should use `long.txt` as the input file.  You may use `100.txt` and `1000.txt` for practice runs, as they should take much less time than `long.txt` to verify.  If not, you have discovered an O(1) way to verify blockchains and we can write a paper together, as long as you promise to share the Turing Prize.
 
+NOTE: You may use the `sample.txt` blockchain for your flamegraph.  This should still give you a good idea of where the hot spots are in your application but it is less likely to cause an error when rendering in your browser.
+
 Note that this project is a very, very simple implementation of a blockchain, missing many important concepts (e.g. distributing transactions, creating a decent hash function, finding peers, dealing with forks in the chain, persistence, etc.).  If you are interested in a deeper understanding, I recommend the following resources:
 
 1. "Bitcoin: A Peer-to-Peer Electronic Cash System" by Satoshi Nakomoto (alias) - (the original theory behind Bitcoin) - https://bitcoin.org/bitcoin.pdf

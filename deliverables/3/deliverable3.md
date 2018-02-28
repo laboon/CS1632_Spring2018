@@ -40,6 +40,8 @@ The summary should be approximately a page.
 
 On a separate page, you should include a screenshot of the flame graph.  You should  _also_ include the generated .html file in your repository.
 
+You may experience issues rendering very large flamegraphs on your browser, especially if you use `long.txt`.  Feel free to use the flamegraph for `sample.txt` if this is the case.
+
 There should be at least twelve unit tests.  It is up to you if you would like to use more, use mocks/doubles/stubs or not, etc.  There just must be at least twelve valid unit tests.
 
 You should time the program with the `long.txt` file three times AND indicate the mean and median amount of real ("wall clock") time it took to execute.  You can do this with the `time` command in Unix-like systems (Linux, OS X, BSD) or the `Measure-Command` command in PowerShell on Windows systems.  All three of these times should be listed ALONG with the MEAN and MEDIAN time to execute the program with `long.txt` on a separate page.
