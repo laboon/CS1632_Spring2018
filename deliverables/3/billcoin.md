@@ -45,7 +45,6 @@ Each line consists of one block.  A block consists of the following elements, se
   * Sum up all of those values
   * Determine that value modulo 65536
   * Return the resulting value as a string version of the number in base-16 (hexadecimal)
-  * 
 
 Transactions must be valid on a per-block basis.  This means that there may be a point mid-way through the block that an address has a negative balance, but every address should have a nonnegative balance (>= 0) by the end of the block.
 
