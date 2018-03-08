@@ -16,10 +16,15 @@ Seed accepted (reproducible w/ same seed):                  _____ / 5
   * Multiple times w/ same seed, same output (-5 if not)
   * Running w/ diff seeds means diff output (-5 if not)
 
-Drivers follow valid paths:                                 _____ / 10
+Drivers follow valid paths:                                 _____ / 15
   * Cars always go in proper directions down streets (-5)
   * Cars always end up going to Monroeville to Downtown (-5)
   * Cars always start in a valid location (-5 if not)
+
+Drivers have correct # items:                               _____ / 10
+  * Correct # books (-5 if not)
+  * Correct # classes (-5 if not)
+  * Correct # toys (-5 if not)
 
 Test Code (45%):
 
