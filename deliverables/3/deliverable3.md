@@ -3,7 +3,7 @@ Spring Semester 2018
 
 ~DUE 12 MAR (MON/WED) / 13 MAR (TUE/THU)~
 
-~DUE 14 MAR (MON/WED) / 15 MAR (TUE/THU)~
+UPDATED: DUE 14 MAR (MON/WED) / 15 MAR (TUE/THU)
 
 ## Deliverable 3
 
