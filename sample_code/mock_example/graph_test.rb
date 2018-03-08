@@ -99,7 +99,7 @@ class GraphTest < Minitest::Test
     # graph.add_node, this will fail
     mocked_node = Minitest::Mock.new("mocked node")
     # Expect id to be called and make a stub
-    # which just returns new, similar to:
+    # which just returns true, similar to:
     # def mocked_node.id; true; end
     mocked_node.expect :id, true
     mocked_node.expect :id, true
