@@ -74,34 +74,35 @@ WPGR = _Why's (Poignant) Guide to Ruby_
 
 ## WEEK 10 (12 Mar)
 
-* (Class 1) Automated System Testing w/ Capybara
+* (Class 1) Flipped class: D3
+  * Early (bonus) deliverable 3 due date
+  
+* (Class 2) Automated System Testing w/ Selenium
   * DUE: Deliverable 3
   * ASSIGNED: Deliverable 4
-
-* (Class 2) Automated System Testing w/ Capybara, part 2
   
 ## WEEK 11 (19 Mar)
 
 * (Class 1) EX4: Automated System Testing
 
 * (Class 2) Static Analysis and Mutation Testing
-  * DUE: Deliverable 4
-  * ASSIGNED: Deliverable 5
 
 ## WEEK 12 (26 Mar)
 
 * (Class 1) NO CLASS
 
 * (Class 2) EX5: Static Analysis and Mutation Testing
+  * DUE: Deliverable 4
+  * ASSIGNED: Deliverable 5 (optional)
+  * ASSIGNED: Deliverable 6
 
 ## WEEK 13 (2 Apr)
 
 * (Class 1) Stochastic and Property-Based Testing
   * READING: AFIST, Chapter 18 
-  * DUE: Deliverable 5
-  * ASSIGNED: Deliverable 6
   
 * (Class 2) EX6: Property-based Testing
+  * DUE: Deliverable 5 (Optional)
   
 ## WEEK 14 (9 Apr)
 
