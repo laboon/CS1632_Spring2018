@@ -93,7 +93,7 @@ WPGR = _Why's (Poignant) Guide to Ruby_
 
 * (Class 2) EX5: Static Analysis and Mutation Testing
   * DUE: Deliverable 4
-  * ASSIGNED: Deliverable 5 (optional)
+  * ASSIGNED: Deliverable 5 (optional - D6 worth 25% of grade if you don't turn in D5)
   * ASSIGNED: Deliverable 6
 
 ## WEEK 13 (2 Apr)
