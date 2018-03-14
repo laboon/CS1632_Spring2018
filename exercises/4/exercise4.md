@@ -44,7 +44,7 @@ _Tokenization_: Know that any spaces should show up as `:on_sp`.  Identifiers fo
 
 _Parsing_: Any non-whitespace (e.g. `:op_nl` or `:on_sp`) tokens (such as `+`, `-`, or `puts`) which appear when being tokenized should also appear in the AST (parse tree).  Whitespace tokens should not appear in the AST.
 
-_Compiling_: Any program that contains `puts` should also have the `putstring` YARV operation.  A program which contains `+` should call the `opt_plus` operation, plus put any of the values specified on the stack using the `putobject` operation.  Any program which contains `-` (subtraction) should contain the `opt_minus` operation, any program with `/`(division) should contain `opt_div`, any program with `*` should contain `opt_mult`.
+_Compiling_: Any program that contains `puts` should also have the `puts` YARV operation.  A program which contains `+` should call the `opt_plus` operation, plus put any of the values specified on the stack using the `putobject` operation.  Any program which contains `-` (subtraction) should contain the `opt_minus` operation, any program with `/`(division) should contain `opt_div`, any program with `*` should contain `opt_mult`.
 
 Based on these and any other issues or expected behavior you may discover, you should write approximately eight test cases and save them.
 
