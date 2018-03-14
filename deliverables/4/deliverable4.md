@@ -5,7 +5,7 @@ DUE 28 MAR (Mon/Wed classes) | 29 MAR (Tue/Thu classes)
 
 ## Deliverable 4
 
-For this assignment, you and a partner will write systems-level, automated black-box tests for a web app using the Selenium IDE. 
+For this assignment, you and a partner will write systems-level, automated black-box tests for a web app using the Katalon Automation Recorder, a revamped variant of the Selenium IDE. 
 
 Test code should be on a private repository and GitHub, and the TA and myself should be added as collaborators by the beginning of class on the due date.
 
@@ -24,6 +24,8 @@ For the summary, add a description of issues you faced when writing these tests 
 After this, there should be a printout or screen shot of the test execution results.
 
 There is no need to print out the code.  It should be shared with me and the TA (i.e., we have been added as collaborators) on GitHub BY THE BEGINNING OF CLASS.
+
+The code should be a saved Katalon test suite.  Note that this should be an HTML file.
 
 There should be a bare minimum of twenty tests, checking various base, edge, and corner cases.  There is a maximum of thirty tests.  However, do not focus on the number of tests too heavily; I am more concerned that you cover a broad variety of cases, check the requirements, and ones which are focused and yet still likely to find defects.
 
@@ -48,7 +50,7 @@ Please make a traceability matrix (just as in the first deliverable).  Tests sho
 ## Grading
 * Summary and Testing concerns - 10% 
 * Screen shot or printout of test results - 5%
-* Selenium Tests - 50%
+* Tests - 50%
 * Defect reports - 25%
 * Traceability matrix - 10%
 
