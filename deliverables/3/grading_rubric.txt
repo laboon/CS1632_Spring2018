@@ -7,10 +7,13 @@ Summary (10%):                                              _____ / 10
 Flame graph included (10%):                                 _____ / 10
 
 Final times included:                                       _____ / 5
-  * -3 if times included, but no mean
-  * -3 if mean included, but not individual times
+  * -3 if times included, but no mean or median
+  * -3 if mean or median included, but not individual times
+  * -2 if only mean or median included
 
 Functionality (50%):
+
+* -5 if program is not called verifier.rb
 
 good.txt properly verified:                                 ______ / 10
   * -5 if incorrect number of Billcoins

@@ -1,0 +1,71 @@
+[laboon@ekaterina ~/pitt/pitt_private/billcoin]
+(20051) $ ruby verifier.rb ~/pitt/CS1632_Spring2018/deliverables/3/final_blockchains/good.txt 
+Peter: 149 billcoins
+Alfred: 7 billcoins
+Yaa: 35 billcoins
+Sheba: 204 billcoins
+Puyi: 3 billcoins
+Xerxes: 40 billcoins
+Maria: 0 billcoins
+Kublai: 84 billcoins
+Mary: 2 billcoins
+Anne: 4 billcoins
+Edward: 1 billcoins
+Mzila: 67 billcoins
+Rana: 96 billcoins
+Wu: 6 billcoins
+James: 14 billcoins
+Kaya: 7 billcoins
+Cyrus: 14 billcoins
+Gaozu: 128 billcoins
+Louis: 101 billcoins
+George: 18 billcoins
+Amina: 0 billcoins
+Henry: 9 billcoins
+Pakal: 11 billcoins
+
+[laboon@ekaterina ~/pitt/pitt_private/billcoin]
+(20052) $ ruby verifier.rb ~/pitt/CS1632_Spring2018/deliverables/3/final_blockchains/bad_format.txt 
+Could not parse 4
+BLOCKCHAIN INVALID
+
+[laboon@ekaterina ~/pitt/pitt_private/billcoin]
+(20053) $ ruby verifier.rb ~/pitt/CS1632_Spring2018/deliverables/3/final_blockchains/bad_prev_hash.txt 
+Line 7: Previous hash was 78a6, should be 2d43
+BLOCKCHAIN INVALID
+
+[laboon@ekaterina ~/pitt/pitt_private/billcoin]
+(20054) $ ruby verifier.rb ~/pitt/CS1632_Spring2018/deliverables/3/final_blockchains/bad_nsec.txt 
+Line 4: Previous timestamp 1521564644.257823000 >= new timestamp 1521564644.2603520
+BLOCKCHAIN INVALID
+
+[laboon@ekaterina ~/pitt/pitt_private/billcoin]
+(20055) $ time ruby verifier.rb ~/pitt/CS1632_Spring2018/deliverables/3/final_blockchains/long.txt 
+Alfred: 48112 billcoins
+Kublai: 37669 billcoins
+Amina: 57731 billcoins
+Xerxes: 48736 billcoins
+Maria: 25112 billcoins
+Rana: 30736 billcoins
+Edward: 42961 billcoins
+Peter: 31613 billcoins
+Kaya: 19460 billcoins
+Wu: 61334 billcoins
+Cyrus: 41036 billcoins
+Mary: 24896 billcoins
+Yaa: 45993 billcoins
+Henry: 101544 billcoins
+Anne: 66386 billcoins
+Gaozu: 26274 billcoins
+George: 20807 billcoins
+James: 69216 billcoins
+Sheba: 39164 billcoins
+Mzila: 50050 billcoins
+Tang: 7733 billcoins
+Puyi: 29333 billcoins
+Louis: 31829 billcoins
+Pakal: 42275 billcoins
+
+real	0m39.491s
+user	0m39.220s
+sys	0m0.194s
