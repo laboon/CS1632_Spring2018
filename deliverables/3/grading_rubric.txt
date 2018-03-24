@@ -1,0 +1,58 @@
+
+Summary (10%):                                              _____ / 10
+  * No typos or grammatical errors (only up to -4)
+  * Describe at least one issue (-8 if not)
+  * Answers which method took up most CPU time (-6 if not)
+
+Flame graph included (10%):                                 _____ / 10
+
+Final times included:                                       _____ / 5
+  * -3 if times included, but no mean or median
+  * -3 if mean or median included, but not individual times
+  * -2 if only mean or median included
+
+Functionality (50%):
+
+* -5 if program is not called verifier.rb
+
+good.txt properly verified:                                 ______ / 10
+  * -5 if incorrect number of Billcoins
+  * -10 if error found
+
+bad_format.txt properly verified:                           ______ / 10
+  * -10 if it does not show error on line 4
+
+bad_prev_hash.txt properly verified:                        ______ / 10
+  * -10 if it does not show error on line 7
+  * -5 if sees error but does not show correct prev hash
+  * (NOTE: May show either bad hash OR bad prev hash)
+
+bad_nsec.txt properly verified:                             ______ / 10
+  * -10 if it does not show error on line 4
+  * -5 if it sees error but does not explain it
+
+long.txt properly verified
+  * -5 if incorrect number of Billcoins
+  * -10 if error found
+
+Unit tests (25%):
+
+Methods tested:                                             _____ / 18
+  * Must be >= 12 unit tests (-5 for each missing)
+  * Each method must start with test_ (-4 for each missing)
+  * Each method must have an assert or refute (-4 for each missing)
+
+Good style:                                                 _____ / 7
+  * All tests properly commented with descriptions (-3 each if not)
+
+If tests cannot run, 5 points for this section MAXIMUM.
+
+-----
+
+Submission issues (-10) or other adjustments:               _____
+  * +3 BONUS to fastest verifier for final_long.txt
+  
+Total:                                                      _____ / 100
+
+
+

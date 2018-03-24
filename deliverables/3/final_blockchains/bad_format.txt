@@ -1,0 +1,10 @@
+0|0|SYSTEM>Cyrus(100)|1521564490.915486000|111e
+1|111e|Cyrus>Rana(9):Rana>Puyi(1):Cyrus>Amina(11):SYSTEM>Wu(100)|1521564490.917325000|a90d
+2|a90d|Amina>Gaozu(1):Puyi>Sheba(1):Cyrus>Sheba(11):SYSTEM>Cyrus(100)|1521564490.921274000|11f2
+3|11f2|Wu>Rana(16):Rana>George(2):Wu>Wu(7):Gaozu>Edward(1):Wu>Mary(9):SYSTEM>Henry(100)|1521564490.924919000|a232
+4|Mary>chachachachacha|1521564490.928907000|7fb4
+5|7fb4|Wu>George(2):Edward>Yaa(2):Rana>Cyrus(4):SYSTEM>Louis(100)|1521564490.931839000|96ec
+6|96ec|Henry>Anne(7):Louis>Amina(8):Cyrus>Pakal(34):Mary>Kublai(1):Wu>Kaya(3):Mary>Alfred(1):George>Pakal(1):Louis>Kublai(5):Amina>Wu(3):Mary>Kublai(1):Louis>Sheba(11):Amina>Mary(3):Rana>Amina(4):Pakal>Louis(3):Amina>Rana(1):Amina>Henry(3):Mary>Sheba(1):Yaa>Kublai(1):Cyrus>Henry(10):SYSTEM>Xerxes(100)|1521564490.935434000|b693
+7|b693|Henry>Kublai(14):Henry>Xerxes(16):Rana>Pakal(3):Mary>Puyi(1):SYSTEM>Pakal(100)|1521564490.948717000|3ae8
+8|3ae8|Anne>Kaya(1):Sheba>Anne(2):SYSTEM>Yaa(100)|1521564490.952792000|57b2
+9|57b2|Amina>Gaozu(1):Puyi>Edward(1):SYSTEM>Anne(100)|1521564490.955455000|39f8

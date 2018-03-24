@@ -1,0 +1,10 @@
+0|0|SYSTEM>Peter(100)|1521564418.642118000|46ac
+1|46ac|Peter>Alfred(12):Peter>Yaa(6):Peter>Sheba(5):Alfred>Puyi(2):Sheba>Xerxes(1):Sheba>Xerxes(1):Puyi>Maria(1):SYSTEM>Kublai(100)|1521564418.643833000|678a
+2|678a|Alfred>Mary(2):Sheba>Anne(1):Sheba>Edward(1):Kublai>Yaa(18):Edward>Mzila(1):SYSTEM>Rana(100)|1521564418.650485000|4d56
+3|4d56|Anne>Puyi(1):Yaa>Wu(5):SYSTEM>Mzila(100)|1521564418.654923000|44e
+4|44e|Yaa>James(4):Alfred>Xerxes(1):Peter>Rana(2):Xerxes>Edward(1):Kublai>Kaya(11):Mzila>James(2):Rana>Cyrus(17):Alfred>Yaa(1):SYSTEM>Gaozu(100)|1521564418.657464000|de29
+5|de29|Sheba>Wu(1):James>Yaa(1):Yaa>Anne(3):Kaya>Alfred(2):Edward>Louis(1):SYSTEM>Gaozu(100)|1521564418.663672000|e253
+6|e253|James>Maria(1):Xerxes>Mzila(1):Louis>Anne(1):Cyrus>Gaozu(1):Xerxes>Rana(1):Gaozu>Xerxes(40):Peter>Kublai(11):Alfred>Edward(2):Maria>George(1):Maria>James(1):Kaya>James(1):Edward>Xerxes(1):Peter>Sheba(5):Xerxes>Amina(1):Mzila>James(8):Peter>Henry(10):Amina>Maria(1):Sheba>Puyi(1):Maria>Amina(1):SYSTEM>Sheba(100)|1521564418.668260000|9f5f
+7|9f5f|SYSTEM>Peter(100)|1521564418.681733000|fce3
+8|fce3|Mzila>George(18):Gaozu>Yaa(21):Cyrus>Kublai(2):Gaozu>Pakal(12):SYSTEM>Louis(100)|1521564418.683822000|89ce
+9|89ce|Kaya>Louis(1):Amina>Puyi(1):Henry>Alfred(1):Pakal>Mzila(3):George>Pakal(2):Mzila>Rana(10):Puyi>George(1):SYSTEM>Sheba(100)|1521564418.688257000|86
