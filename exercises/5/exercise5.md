@@ -18,7 +18,7 @@ By running `rubocop filename.rb`, you will be able to see a list of all violatio
 
 ### Notes
 
-1. Rubocop may ask you to use the &:method_name shortcut.  This is a very cool Ruby shortcut but I did not teach you it.  The change is pretty self-explanatory but to understand what it is asking you, please see this page: https://stackoverflow.com/questions/1961030/ruby-ampersand-colon-shortcut
+1. Rubocop may ask you to use the `&:method_name` shortcut.  This is a very cool Ruby shortcut but I did not teach you it.  The change is pretty self-explanatory but to understand what it is asking you, please see this page: https://stackoverflow.com/questions/1961030/ruby-ampersand-colon-shortcut
 2. You may not be able to see trailing whitespace in your editor - rubocop knows that it is there, though!  
 
 ## Tool 2 - Reek
@@ -33,7 +33,7 @@ By running `reek filename.rb`, you will be able to see a list of code smells.  T
 
 ## Tool 3 - Simplecov
 
-Simplecov will let you know where your tests are not testing by performing a code coverage analysis - specifically, statement coverage (remember that
+Simplecov will let you know where your tests are not testing by performing a code coverage analysis - specifically, statement coverage (remember that there are other kinds of code coverage such as branch coverage and method coverage)
 
 First, open the `graph_test.rb` file and note the top few lines which start `simplecov`.  These lines are necessary for using simplecov.
 
@@ -47,7 +47,7 @@ Coverage report generated for MiniTest to /Users/laboon/pitt/CS1632_Spring2018/e
 
 This lets us know that only 70% (28 out of 40 lines of code) of all the files tested by graph_test.rb have actually been executed by the test suite.  Note that ths includes both `graph.rb` *and* `node.rb`.  We are only concerned with `graph.rb`.  In order to find out which lines and which files we will need to add tests for, we need to look at the coverage report.
 
-Go the `./coverage` subdirectory and open the `index.html` file.  You may do this with `open index.html` with OS X or navigate to it using your favorite web browser (via Open File).  This file will be refreshed with subsequent runs so that you can just refresh that page.
+Go the `./coverage` subdirectory and open the `index.html` file.  You may do this with `open index.html` with OS X or navigate to it using your favorite web browser (via Open File).  Note that this same file will be refreshed with subsequent runs so that you can just refresh that page after re-running your tests to see updated coverage statistics.
 
 You can see that `node.rb` and `graph.rb` have different coverage ratios.  Click on the magnifying glass icon next to `graph.rb` to see which particular lines are never called.
 
@@ -59,7 +59,7 @@ Add additional unit tests to ensure that you have gotten code coverage _in graph
 2. A pseudograph is defined as a graph where at least one node links to itself.  This should be easy to do using stubbing.
 3. Note that you need to get 100% coverage ONLY in `graph.rb`.
 4. Note that you may need to stub multiple methods in a single test case!  Verify which ones you need by reviewing the code.
-5. You should ONLY be doubling node objects and stubbing node methods.  Do not stub any `graph` methods or double `graph` itself, as `graph` is the class under test.
+5. You should ONLY be doubling `node` objects and stubbing `node` methods.  Do not stub any `graph` methods or double `graph` itself, as `graph` is the class under test.
 
 ## Grading
 
