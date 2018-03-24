@@ -24,10 +24,8 @@ You are not _required_ to create a traceability matrix for this assignment, but 
 3. Testing strategies used.  You should answer the following questions.
    1. What kinds of tests did you write? Why?
    2. What percentage of time/effort was allocated to each kind of test?
-   5. What recommendations would you give to help increase quality?
-   6. What parts of the code need to be cleaned up?
-   7. What kinds of things did you discover in exploratory testing?
-   8 If you developed a manual testing plan, include it here.
+   3. What kinds of things did you discover in exploratory testing?
+   4. If you developed a manual testing plan, include it here.
 
 ## Program Functionality
 
