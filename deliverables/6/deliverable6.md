@@ -15,17 +15,17 @@ I expect you to do independent research to determine general information about h
 
 Your paper should include the following three sections.  You should LABEL each section clearly.  You may use graphs, charts, etc. if these would help in understanding your position.
 
-Your program MUST have at least 70% test coverage and have four or fewer errors from Rubocop (run on default settings).  Using reek may be helpful but it is not required for this deliverable.
-
-You are not _required_ to create a traceability matrix for this assignment, but it would be a good addition to ensure that you have verified all of the requirements.
-
-1. A review of the program's overall quality.  This should be done using the Red-Yellow-Green template.  It is up to you to determine the subsets of functionality and/or subsystems.
+1. A review of the program's overall quality.  This should be done using the Red-Yellow-Green template (as explained in the lecture on "Interacting wih Stakeholders").  It is up to you to determine the subsets of functionality and/or subsystems.
 2. Areas of concern.  We want the program to compare favorably in terms of features and quality with similar software.  If there are known defects, list them here.  These should be written using the standard defect template.  It is much better for your grade if you find a defect yourself and report it than if I find it.
 3. Testing strategies used.  You should answer the following questions.
    1. What kinds of tests did you write? Why?
    2. What percentage of time/effort was allocated to each kind of test?
    3. What kinds of things did you discover in exploratory testing?
    4. If you developed a manual testing plan, include it here.
+
+Your program MUST have at least 70% test coverage and have four or fewer errors from Rubocop (run on default settings).  Using reek may be helpful but it is not required for this deliverable.
+
+You are not _required_ to create a traceability matrix for this assignment, but it would be a good addition to ensure that you have verified all of the requirements.
 
 ## Program Functionality
 
@@ -39,7 +39,7 @@ Detailed requirements are listed below.
 
 ## Requirements
 
-1. The program shall be named RPN and should be runnable from the command line using the command "java RPN".
+1. The program shall be named rpn.rb and should be runnable from the command line using the command `ruby rpn.rb`.
 1. Tokens shall be numbers, variable names, operators, or one of the keywords QUIT, LET, or PRINT.
 1. A number shall consist of one or more digits.  All numbers shall be arbitrary-precision (i.e., there shall be no integer overflow - 999999999999999999999999999 shall be considered a valid number and stored as such).
 1. Variable names can be a single letter (A-Z) and are case-insensitive (e.g., `a` and `A` refer to the same variable).
@@ -60,8 +60,7 @@ Detailed requirements are listed below.
 1. If an expression used for initializing a LET variable is invalid, the variable is considered to have not been initialized.  For example, "LET A 1 2" is invalid, and A is not initialized.
 1. If an invalid keyword is used, the program shall inform the user and QUIT the program with error code 4.  It should inform the user in the following format: "Line n: Unknown keyword k" where `k` is the keyword and `n` is the line number the error occurred in.
 1. The exception to the previous requirement is that if this occurs in REPL mode, the user shall be informed, but the line will simply be ignored.
-1. All other errors shall result in the program informing the user of the error and exiting with error code 5.  At no point shall the end user of the system see a Java exception or stack trace.
-1. All errors shall be written to standard error (stderr), not standard output (stdout).
+1. All other errors shall result in the program informing the user of the error and exiting with error code 5.  At no point shall the end user of the system see a "raw" exception or stack trace.
 1. In REPL mode, the result of each line shall be displayed immediately afterwards before another prompt comes up.
 1. In REPL mode, PRINT shall not perform any additional work, as the result of the RPN expression evaluation will already be displayed.
 1. In REPL mode, when displaying error messages, the current line shall be considered as the nth command entered. For example, the first line entered shall be considered Line 1, the second line entered Line 2, etc.
@@ -72,7 +71,6 @@ Detailed requirements are listed below.
 1. Blank lines in files shall be ignored.
 1. Lines in files are considered to be 1-indexed, that is, the first line in a file is line number 1, not 0.
 1. Variable values shall not be persisted across executions.  In other words, if I initialize a variable `a`, then quit the program and start it again, variable `a` is no longer initialized.
-1. The main program shall be named rpn.rb.  I should be able to run it using `ruby rpn.rb`.
 
 ## Sample Output
 
