@@ -10,7 +10,7 @@ This assignment is optional.  If you choose to do it, it is worth 10% of your gr
 
 ## Description
 
-You (and an optional partner) will refactor one of your deliverable 2 assignments (it may be either partner's) by using the following tools: rubocop, reek, and simplecov.
+You (NOT with a partner) will refactor your deliverable 2 assignment by using the following tools: rubocop, reek, and simplecov.
 
 Do NOT use the same repository as D2 - you should copy the code and create a new D5 repository.
 
@@ -20,7 +20,7 @@ You should fix all problems caused by reek and rubocop.  However, I am giving yo
 
 ## Format
 Every assignment should have a title page with:
-* The name of the students in the group and their GitHub usernames
+* The name of the student their GitHub usernames
 * The title "CS 1632 - DELIVERABLE 5: Static Analysis"
 * The URL for your git repository
 
