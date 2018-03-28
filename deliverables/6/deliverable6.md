@@ -231,7 +231,7 @@ Line 3: Operator + applied to empty stack
 
 ## Format
 Every assignment should have a title page with:
-* The name of the students in the group
+* The names of the students in the group and their GitHub usernames
 * The title "CS 1632 - DELIVERABLE 6: Testing Strategy for RPN++"
 * Link to the GitHub URL
 
