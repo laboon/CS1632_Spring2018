@@ -18,7 +18,7 @@ Tests include assertions                                  _____ / 20
 
 Defects caught:                                           _____ / 10
   * At least three tests should fail and they
-    should line up with the reported defects (-3 for each not)
+    should line up with the reported defects (-5 for each not)
 
 Good style:                                               _____ / 10
   * Tests cover variety of edge and happy path cases
@@ -28,7 +28,7 @@ Defects (25%):
 If not at least three defects, maximum 10/25 on this section
 
 Three valid defects found:                                _____ / 15
-  * Defect lines up with failed unit test (-3 if not)
+  * Defect lines up with failed test case (-3 if not)
   * Defect actually occurs (-5 if not)
 
 Defects reported properly:                                _____ / 10
@@ -38,7 +38,9 @@ Defects reported properly:                                _____ / 10
 
 Traceability Matrix                                       _____ / 10
   * -10 if not included
-  * 
+  * -5 for each requirement not tested
+  * -5 if test does not match requirement
+  
 -----
 
 Submission issues (-10) or other adjustments:             _____
