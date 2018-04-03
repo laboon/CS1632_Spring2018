@@ -1,0 +1,49 @@
+Summary and testing concerns (10%):
+
+Summary and concerns:                                     _____ / 10
+  * Describes and summarizes experience (-5 if not)
+  * Describes test failures (-5 if not)
+
+Screenshot of executed unit tests (5%):                   _____ / 5
+  * -5 if not there or not including output of unit tests
+  
+Katalon tests (50%):
+
+Maximum 10/50 if tests cannot run!
+
+Tests execute:                                            _____ / 10
+
+Tests include assertions                                  _____ / 20
+  * -5 for each test without an assertion or verify
+
+Defects caught:                                           _____ / 10
+  * At least three tests should fail and they
+    should line up with the reported defects (-3 for each not)
+
+Good style:                                               _____ / 10
+  * Tests cover variety of edge and happy path cases
+
+Defects (25%):
+
+If not at least three defects, maximum 10/25 on this section
+
+Three valid defects found:                                _____ / 15
+  * Defect lines up with failed unit test (-3 if not)
+  * Defect actually occurs (-5 if not)
+
+Defects reported properly:                                _____ / 10
+  * Expected behavior / observed behavior / repro steps (-4 for each
+    test case incorrectly reported)
+  * General quality (well-specified, well-written)
+
+Traceability Matrix                                       _____ / 10
+  * -10 if not included
+  * 
+-----
+
+Submission issues (-10) or other adjustments:             _____
+
+Total:                                                    _____ / 100
+
+
+
