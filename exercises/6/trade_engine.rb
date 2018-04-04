@@ -12,7 +12,7 @@ class TradeEngine
   def buy_a_stock
     print 'Stock ticker > '
     stock = gets.chomp.downcase
-    print 'Number shares > '
+    print 'Number share(s) > '
     num_shares = gets.chomp.to_i
     @account.buy stock, num_shares
   end
@@ -20,7 +20,7 @@ class TradeEngine
   def sell_a_stock
     print 'Stock ticker > '
     stock = gets.chomp.downcase
-    print 'Number shares > '
+    print 'Number share(s) > '
     num_shares = gets.chomp.to_i
     @account.sell stock, num_shares
   end

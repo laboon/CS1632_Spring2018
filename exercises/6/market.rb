@@ -21,9 +21,15 @@ class Market
     end
   end
 
-  def iterate
+  def iterate(seed = nil)
+    r = nil
+    if seed.nil?
+      r = Random.new
+    else
+      r = Random.new(seed)
+    end
     @prices.each do |k, v|
-      @prices[k] += Random.rand(-5.0..5.0)
+      @prices[k] += r.rand(-5.0..5.0)
     end
   end
 

@@ -33,7 +33,7 @@ class Account
     puts "You own:"
     puts "$#{@money.round(2)}"
     @share_list.each do |k, v|
-      puts "#{k.upcase}... #{v} shares"
+      puts "#{k.upcase}... #{v} share(s)"
     end
   end
 
