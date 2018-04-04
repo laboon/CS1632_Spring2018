@@ -40,7 +40,9 @@ Traceability Matrix                                       _____ / 10
   * -10 if not included
   * -5 for each requirement not tested
   * -5 if test does not match requirement
-  
+
+-10 if stuck in infinite verify loop                      _____ 
+
 -----
 
 Submission issues (-10) or other adjustments:             _____
