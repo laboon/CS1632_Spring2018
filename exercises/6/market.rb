@@ -2,8 +2,16 @@ class Market
 
   STOCKS = ['BI', 'LL', 'LA', 'BO', 'ON']
 
-  def initial_price
-    Random.rand(1.0..100.0).round(2)
+  attr_accessor :prices
+  
+  def initial_price(seed = nil)
+    r = nil
+    if (seed.nil?)
+      r = Random.new
+    else
+      r = Random.new(seed)
+    end
+    r.rand(1..31).to_f.round(2)
   end
   
   def initialize
@@ -19,9 +27,14 @@ class Market
     end
   end
 
+  # Returns the price of a named stock
+  # If the stock does not exist, return -1
   def price name
-    return 'INVALID' if @prices[name.upcase].nil?
     @prices[name.upcase]
+  end
+
+  def calculate_cost share_price, num_shares
+    share_price * num_shares
   end
   
   def print

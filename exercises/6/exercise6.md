@@ -18,6 +18,14 @@ In order to do so, we will use the Ruby gem __rantly__.  Rantly is a property-ba
 
 Note that there are other some files.  You do not need to perform any property-based testing or other testing on them.
 
+Rantly GitHub page: https://github.com/rantly-rb/rantly
+
+## Note on Errors
+
+If you are having trouble using bundle install (such as an error saying `Gem::RemoteFetcher::UnknownHostError timed out` or something similar), I have included the rantly gem in this repository.  Ensure that it is in your current directory (you can download it from github directly)
+
+`gem install --local rantly-1.1.0.gem`
+
 ## Grading
 
 This is an exercise and is not graded.
