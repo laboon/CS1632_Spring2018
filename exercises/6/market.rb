@@ -39,6 +39,10 @@ class Market
     @prices[name.upcase]
   end
 
+  # Calculate the cost to buy a certain number of shares
+  # at a certain price
+  # If a negative number is passed in for num_shares, assume they
+  # mean a positive number (e.g., -5 shares -> 5 shares)
   def calculate_cost share_price, num_shares
     share_price * num_shares
   end
