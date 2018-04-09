@@ -1,14 +1,14 @@
 # CS 1632 Midterm 2 Study Guide
-FALL 2017
+SPRING 2018
 
-The second midterm is WEDNESDAY 29 NOV.
+The second midterm is MONDAY 16 APR (for Mon/Wed classes) or TUESDAY 17 APR (for Tue/Thu classes).
 
-Note that the second midterm is _not_ cumulative, except in the sense that the topics covered in the second half of the semester depend on understanding of the more fundamental concepts taught in the beginning of the course.
+Note that the second midterm is _not_ cumulative, except in the sense that the topics covered in the second half of the semester depend upon understanding of the more fundamental concepts taught in the beginning of the course.
 
 ## WEB TESTING
 * Be able to explain how you would test a web page with Katalon
 * You should know basic Selenese (Katalon/Selenium scripting language), e.g.
-  * Opening a webpage
+  * Opening a URL
   * Clicking on a link
   * Testing for text
   * You will not need to know about specifying target selection, but do need to know what target selection is and recognize it (i.e. if I show you a webpage, I will note specific target values for different elements - you will not need to read raw HTML)
