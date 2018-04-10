@@ -1,0 +1,39 @@
+Rubocop issues (25%):
+
+
+
+
+  
+Reek issues (20%):
+
+
+
+
+
+Simplecov coverage (30%):
+
+
+
+
+
+Unit test quality (25%):
+
+
+
+
+
+OTHER ISSUES
+
+
+
+
+
+
+-----
+
+Submission issues (-10) or other adjustments:             _____
+
+Total:                                                    _____ / 100
+
+
+
