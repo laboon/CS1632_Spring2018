@@ -72,6 +72,24 @@ Detailed requirements are listed below.
 1. Lines in files are considered to be 1-indexed, that is, the first line in a file is line number 1, not 0.
 1. Variable values shall not be persisted across executions.  In other words, if I initialize a variable `a`, then quit the program and start it again, variable `a` is no longer initialized.
 
+## Clarifications
+
+_These are all requirements added in response to student questions and clarifications._
+
+1. If multiple files are input, the line number output if there is an error should be the line of the concatenated file.  For example, if file1.rpn has 5 lines which are all correct, and file2.rpn has 4 lines and the first line is invalid, and the user runs `ruby rpn.rb file1.rpn file2.rpn`, the error should display that it has occurred on line 6.
+2. Blank lines should be ignored from a statement perspective (i.e., a blank line is not a syntax error) BUT blank lines should count in terms of line count.  For example, imagine a file which has one valid statement, then two blank lines, then an invalid statement.  The invalid statement has occurred on line 4, _not_ line 2.
+3. In cases where multiple errors on a line would be appropriate, you should print out only one error.  It is up to you to decide which one.
+4. Note that the exit code ("error code") is NOT printed out.  You may exit with different exit codes by the method exit _x_ where _x_ is the exit code, e.g., `exit 3` to exit with exit code 3.  You may check that this operated properly at the command line by typing `echo $?` in Unix-like systems (Linux, OS X) or `echo %errorlevel%` if you are using the Windows command line.
+5. In files, it is legal to have a line which does not result in any output or state being changed.  For example, `6 5 +` is a valid statement.  In such a case, there should be no output and the value is "thrown away".  A REPL always shows the result of the stack if there is no PRINT statement so this should not be an issue for REPLs.
+6. It is legal to set one variable equal to another (e.g. `LET A B` will take the value of B and copy it to A).
+7. Attempting to enter a decimal at the REPL or in the file should be an error, e.g. `1.5 2.5 +` is invalid.  Only integers should be entered.
+8. There is no such thing as order-of-operations or precedence in RPN.  For example, in infix notation, `5 + 2 * 3` could be rewritten as `5 + (2 * 3)`, but not `(5 + 2) * 3`, since multiplication has higher precedence.  However, `5 * 2 + 3` could be rewritten as `(5 * 2) + 3` but not `5 * (2 + 3)`.  `5 2 3 * +` would equal 11.  To change "precedence", you simply change the location of the operators, e.g. `5 2 3 + *`.
+9. One way to test your RPN calculations is to use an RPN calculator.  In Emacs this can be reached via `M-x calc`, on OS X or Linux you can get one by typing `dc` at the terminal, in Windows you can install RPN Scientific X ( https://www.microsoft.com/en-us/store/p/rpn-scientific-x/9nblggh64lf4 ) or another program.
+10. Note that there is no specific section on the grading rubric for rubocop.  You can get points off for not fixing your rubocop errors but you do not get points "just" for following the rubocop instructions.
+11. REPL should NEVER exit except by someone typing the keyword QUIT as explained in the requirements.
+12. You are allowed to read in all of the file(s) into an in-memory array.  You do not have to worry about swapping data out due to it being too large to store in memory.
+13. There is no limit on the number of possible files being read in, although for testing purposes you may assume that no more than 20 will be read in.
+
 ## Sample Output
 
 Note that `cat` is the command to display a file and `$` is simply the default bash prompt.  Thus,
@@ -129,7 +147,7 @@ Line 4: Unknown keyword LOOP
 > 4 3 LET + a
 Line 5: Could not evaluate expression
 > LET a
-Line 6: Operator LET applied to empty stack
+Line 6: LET applied to empty stack
 > QUIT BUMBLEBEE
 
 ```
