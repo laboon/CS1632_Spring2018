@@ -64,6 +64,7 @@ Detailed requirements are listed below.
 1. In REPL mode, the result of each line shall be displayed immediately afterwards before another prompt comes up.
 1. In REPL mode, PRINT shall not perform any additional work, as the result of the RPN expression evaluation will already be displayed.
 1. In REPL mode, when displaying error messages, the current line shall be considered as the nth command entered. For example, the first line entered shall be considered Line 1, the second line entered Line 2, etc.
+1. In REPL mode, the only way to exit will be if the user types QUIT (or Control-C).  No syntax error should cause the program to exit when in REPL mode.
 1. This program shall minimize real execution time, even at the expense of memory or CPU usage.
 1. The "> " string shall be used as the prompt for REPL mode.  Note that there is a space after the > character.
 1. In case of ambiguity in requirements, the sample output shall be considered the ground truth.
