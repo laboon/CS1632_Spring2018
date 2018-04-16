@@ -260,7 +260,7 @@ _Remember that the GitHub repository should be private, but the TA and I should 
 
 I expect a unit test suite of _at least_ 20 unit tests, evaluating a variety of different base, edge, and possibly corner cases.  As always, this should be well-commented and of high quality.
 
-Your test suite should also (as mentioned above) have >70% statement coverage (as measured by simplecov) of the pogram.
+Your test suite should also (as mentioned above) have >70% statement coverage (as measured by simplecov) of the program.
 
 You do NOT need to run rubocop or simplecov on the test code itself.
 
