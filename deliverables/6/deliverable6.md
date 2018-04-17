@@ -90,6 +90,7 @@ _These are all requirements added in response to student questions and clarifica
 11. REPL should NEVER exit except by someone typing the keyword QUIT as explained in the requirements.
 12. You are allowed to read in all of the file(s) into an in-memory array.  You do not have to worry about swapping data out due to it being too large to store in memory.
 13. There is no limit on the number of possible files being read in, although for testing purposes you may assume that no more than 20 will be read in.
+14. You may count all rubocop errors/warnings of the same type as a single error.  For example, if you have a five errors but they are all warning about cyclomatic complexity, you can count that as a single error (and thus only one of your four "get of jail free" cards).
 
 ## Sample Output
 
