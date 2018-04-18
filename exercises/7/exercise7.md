@@ -23,7 +23,7 @@ ENTER SECRET WORD > catfish
 ACCESS GRANTED: CATFISH
 ```
 
-There are three files, one for each class.  If you are in the Mon/Wed 11:00 class, use the one in the ./wed_11 subdirectory; in the Mon/Wed 1:00 class, the ./wed_1 subdirectory, and in the Tue/Thu 9:30 class, the ./thu_930 subdireector.
+There are three files, one for each class.  If you are in the Mon/Wed 11:00 class, use the one in the ./wed_11 subdirectory; in the Mon/Wed 1:00 class, the ./wed_1 subdirectory, and in the Tue/Thu 9:30 class, the ./thu_930 subdirectory.
 
 How should you figure it out?  That's up to you.
 
