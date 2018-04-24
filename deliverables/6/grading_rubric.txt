@@ -1,0 +1,41 @@
+Overall review of quality: 10%
+
+
+
+
+
+Description of issues and enhancements: 10%
+
+
+
+
+
+Description of testing strategy: 10%
+
+
+
+
+
+
+
+Program Functionality: 40%
+
+
+
+
+
+
+
+
+
+
+
+Automated Test Suite (incl. test coverage >= 70%): 30%
+
+
+
+
+
+
+
+-1 For Each Rubocop Issue > 4, up to -10
