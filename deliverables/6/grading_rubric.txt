@@ -30,7 +30,13 @@ Program Functionality: 40%
 
 
 
+
+
+
+
 Automated Test Suite (incl. test coverage >= 70%): 30%
+
+
 
 
 
