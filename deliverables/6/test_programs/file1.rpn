@@ -1,0 +1,11 @@
+LET a 10 10 10 + +
+LET b 4 4 4 - -
+LET c a b +
+print a
+print b
+print c
+4 5 +
+6 3 /
+print a
+print b
+print c

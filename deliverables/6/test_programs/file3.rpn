@@ -1,0 +1,6 @@
+LET A 0 0 +
+LET a 1 3 +
+print A
+QUIT
+LET b 4 4 +
+print b
