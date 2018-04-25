@@ -1,0 +1,97 @@
+[laboon@ekaterina ~/pitt/homework/CS1632QA_D6]
+(21811) $ ruby rpn.rb
+> 9 0 /
+divided by 0
+> 0 0 /
+divided by 0
+> let a his
+Line 3: Could not evaluate expression
+> let a 9 9 9 9 * * *
+6561
+> a
+6561
+> let b a a 
+Line 6: 2 elements in stack after evaluation
+> let b a a /
+1
+> a
+6561
+> b
+1
+> b * c
+Line 10: Operator * applied to empty stack
+> b
+1
+> c
+Line 12: Variable c is not initialized
+> let c
+Line 13: Operator LET applied to empty stack
+> c
+Line 14: Variable c is not initialized
+> huiorwehur9
+Line 15: Unknown keyword huiorwehur9
+> nfjkebje      quit
+Line 16: Unknown keyword nfjkebje
+> quit
+
+[laboon@ekaterina ~/pitt/homework/CS1632QA_D6]
+(21812) $ !20818
+ruby rpn.rb ~/pitt/CS1632_Spring2018/deliverables/6/test_programs/file1.rpn
+30
+4
+34
+30
+4
+34
+
+[laboon@ekaterina ~/pitt/homework/CS1632QA_D6]
+(21813) $ ruby rpn.rb ~/pitt/CS1632_Spring2018/deliverables/6/test_programs/file2.rpn
+10000000000000000000000000000000000000000000000
+Line 4: 14 elements in stack after evaluation
+
+[laboon@ekaterina ~/pitt/homework/CS1632QA_D6]
+(21814) $ ruby rpn.rb ~/pitt/CS1632_Spring2018/deliverables/6/test_programs/file3.rpn
+4
+
+[laboon@ekaterina ~/pitt/homework/CS1632QA_D6]
+(21815) $ ruby rpn.rb ~/pitt/CS1632_Spring2018/deliverables/6/test_programs/file4.rpn
+Line 3: Invalid instance variable 
+
+[laboon@ekaterina ~/pitt/homework/CS1632QA_D6]
+(21816) $ ruby rpn.rb ~/pitt/CS1632_Spring2018/deliverables/6/test_programs/file5.rpn
+Line 2: Operator LET applied to empty stack
+
+[laboon@ekaterina ~/pitt/homework/CS1632QA_D6]
+(21817) $ echo $?
+1
+
+[laboon@ekaterina ~/pitt/homework/CS1632QA_D6]
+(21818) $ ruby rpn.rb ~/pitt/CS1632_Spring2018/deliverables/6/test_programs/file6.rpn
+Line 3: Variable b is not initialized
+
+[laboon@ekaterina ~/pitt/homework/CS1632QA_D6]
+(21819) $ ruby rpn.rb ~/pitt/CS1632_Spring2018/deliverables/6/test_programs/file7.rpn
+Line 3: Could not evaluate expression
+
+[laboon@ekaterina ~/pitt/homework/CS1632QA_D6]
+(21820) $ ruby rpn.rb ~/pitt/CS1632_Spring2018/deliverables/6/test_programs/file8.rpn
+512
+362894
+0
+
+[laboon@ekaterina ~/pitt/homework/CS1632QA_D6]
+(21821) $ ruby rpn.rb ~/pitt/CS1632_Spring2018/deliverables/6/test_programs/file9.rpn
+18
+
+[laboon@ekaterina ~/pitt/homework/CS1632QA_D6]
+(21822) $ ruby rpn.rb ~/pitt/CS1632_Spring2018/deliverables/6/test_programs/file10.rpn
+-80
+
+[laboon@ekaterina ~/pitt/homework/CS1632QA_D6]
+(21823) $ ruby rpn.rb ~/pitt/CS1632_Spring2018/deliverables/6/test_programs/file11.rpn
+
+[laboon@ekaterina ~/pitt/homework/CS1632QA_D6]
+(21824) $ ruby rpn.rb ~/pitt/CS1632_Spring2018/deliverables/6/test_programs/file11.rpn ~/pitt/CS1632_Spring2018/deliverables/6/test_programs/file12.rpn
+7
+
+
